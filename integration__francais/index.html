@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+x-data="{"
+>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,34 +11,70 @@
     
         <title>Earth Topic</title>
 
+        <script defer src="https://unpkg.com/alpinejs"></script>
+        <style>
+            .menu {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100vW;
+            height: 100vH;
+            background: #fff;
+            display: grid;
+            place-content: center;
+            }
+            .header__menuBtn {
+            position: relative;
+            z-index: 10;
+            }
+            .noscroll,
+            .noscroll body {
+            overflow: hidden;
+            }
+        </style>
+
     </head>
 
     <body>
         <header>
             <button>
-                <a href="/2022-sae105-projet-Rebuffoni-Xavier/integration__anglais/index.htm">
+                <a href="/integration__anglais/index.htm">
                     <img src="/public/icones/Flag_of_France_(1794–1815,_1830–1974,_2020–present) 1.webp" alt="logo changement de langue">
                 </a>
             </button>
 
             <button>
-                <img src="/public/icones/Logo site 1.webp" alt="logo du site">
+                <a href="/integration__francais/index.html">
+                    <img src="/public/icones/Logo site 1.webp" alt="logo du site">
+                </a>
             </button>
 
-            <nav>
+            <button aria-controls="mainNav" 
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="header__menuBtn"
+            >
+                <img src="/public/icones/menu-burger 1.webp" alt="logo menu burger">
+            </button>
+
+            <nav id="mainNav" 
+            x-show="menuIsOpen" 
+            x-transition.duration.800ms
+            class="menu"
+            >
                 <ul>
-                  <li><a href="desolation.html">Désolation</a></li>
-                  <li><a href="espoir.html">Espoir</a></li>
-                  <li><a href="comment_agir.html">Comment agir ?</a></li>
-                  <li><a href="glossaire.html">Glossaire</a></li>
+                    <li>Désolation</li>
+                    <li>Espoir</li>
+                    <li><a href="/integration__francais/comment_agir.html">Comment agir ?</a></li>
+                    <li><a href="/integration__francais/glossaire.html">Glossaire</a></li>
                 </ul>
-              </nav>
+            </nav>
 
         </header>
 
         <main>
 
             <h1>Earth Topic</h1>
+
             <img src="/public/img/Bouton.webp" alt="bouton Terre">
 
             <section>
@@ -46,7 +85,7 @@
                 <img src="/public/img/Terre en feu.webp" alt="image de la terre en train de bruler">
                 <h2>Un monde en péril ?</h2>
                 <p>Si on fait le constat de la Terre en 2022 et des messages de prévention des ONG, comment ne pas craindre un avenir où la nature sera complètement détruite ? Si on veut pouvoir agir il faut déjà ouvrir les yeux sur ce qui risque d’arriver si on ne fait rien.</p>
-                <a href="/integration__francais/desolation.html">
+                <a href="/integration__francais/craintes.html">
                     Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
                 </a>
             </section>
@@ -109,43 +148,62 @@
 
         <footer>
 
-            <nav>
+            <div>
               <h3>Me suivre</h3>
               <ul>
+
                 <a href="https://www.instagram.com/cine_feel_m/">
                     <img src="/public/icones/instagram 1.webp" alt="logo Instagram">
                 </a>
+
                 <a href="#">
                     <img src="/public/icones/facebook 1.webp" alt="logo Facebook">
                 </a>
+
                 <a href="https://www.youtube.com/channel/UCeTZe0cGb4BJasd4RHtFR9w">
                     <img src="/public/icones/youtube (1) 1.webp" alt="logo Youtube">
                 </a>
+
                 <a href="#">
                     <img src="/public/icones/mail 1.webp" alt="logo mail">
                 </a>
+
               </ul>
+            </div>
+
+            <nav>
+                <a href="/integration__francais/a_propos.html">
+                    <h3>A propos</h3>
+                </a>
+            </nav>
+
+            <nav>
+                <a href="/integration__francais/glossaire.html">
+                    <h3>Glossaire</h3>
+                </a>
+            </nav>
+
+            <nav>
+                <a href="/integration__francais/autres_projets.html">
+                    <h3>Autres Projets</h3>
+                </a>
+            </nav>
+
+            <nav>
+                <a href="/integration__francais/contact.html">
+                    <h3>Contact</h3>
+                </a>
             </nav>
         
             <div>
-              <h3></h3>
-              <address>1 rue Paul Koepfler<br>90000 Belfort<br>
-                <a href="tel:0384542727">03 84 54 27 27</a><br>
-                <a href="mailto:conservatoire@agglo-belfort.fr">conservatoire@agglo-belfort.fr</a>
-              </address>
+                <h3>Mention Légale</h3>
+                <img src="/public/icones/MMI 1.webp" alt="logo du MMI">
+                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
             </div>
-        
-            <div>
-              <h3>Nous suivre</h3>
-              <ul>
-                <li><a href="https://facebook.com" aria-label="facebook"><img src="assets/icones/icon_facebook.svg" alt="icone facebook"></a></li>
-                <li><a href="https://instagram.com" aria-label="instagram"><img src="assets/icones/icon_instagram.svg" alt="icone instagram"></a></li>
-                <li><a href="https://twitter.com" aria-label="twitter"><img src="assets/icones/icon_twitter.svg" alt="icone twitter"></a></li>
-                <li><a href="https://youtube.com" aria-label="youtube"><img src="assets/icones/icon_youtube.svg" alt="icone youtube"></a></li>
-              </ul>
-            </div>
-        
-            <img src="assets/icones/logo-grand-belfort.svg" alt="Logo du Grand Belfort">
+
+            <nav>
+                <p>Xavier REBUFFONI MMI 1 C1</p>
+            </nav>
         
           </footer>
     </body>

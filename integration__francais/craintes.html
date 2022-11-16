@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+x-data="{"
+>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projet individuel MMI Montbéliard">
+    
+        <title>Earth Topic</title>
+
+        <script defer src="https://unpkg.com/alpinejs"></script>
+        <style>
+            .menu {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100vW;
+            height: 100vH;
+            background: #fff;
+            display: grid;
+            place-content: center;
+            }
+            .header__menuBtn {
+            position: relative;
+            z-index: 10;
+            }
+            .noscroll,
+            .noscroll body {
+            overflow: hidden;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <button>
+                <a href="/integration__anglais/index.htm">
+                    <img src="/public/icones/Flag_of_France_(1794–1815,_1830–1974,_2020–present) 1.webp" alt="logo changement de langue">
+                </a>
+            </button>
+
+            <button>
+                <a href="/integration__francais/index.html">
+                    <img src="/public/icones/Logo site 1.webp" alt="logo du site">
+                </a>
+            </button>
+
+            <button aria-controls="mainNav" 
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="header__menuBtn"
+            >
+                <img src="/public/icones/menu-burger 1.webp" alt="logo menu burger">
+            </button>
+
+            <nav id="mainNav" 
+            x-show="menuIsOpen" 
+            x-transition.duration.800ms
+            class="menu"
+            >
+                <ul>
+                    <li>Désolation</li>
+                    <li>Espoir</li>
+                    <li><a href="/integration__francais/comment_agir.html">Comment agir ?</a></li>
+                    <li><a href="/integration__francais/glossaire.html">Glossaire</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+           <section>
+                <article>
+                    <header>
+                        <h1>Un monde en péril ?</h1>
+                        <img src="/public/img/Terre en feu.webp" alt="la Terre en train de bruler">
+                        <p>Si on fait le constat de la Terre en 2022 et des messages de prévention des ONG, comment ne pas craindre un avenir où la nature sera complètement détruite ? Si on veut pouvoir agir il faut déjà ouvrir les yeux sur ce qui risque d’arriver si on ne fait rien.</p>
+                    </header>
+
+                    <h2>La Terre en 2022</h2>
+
+                    <ul>
+                        <li>24 Février = Après de nombreuses opérations militaires, la Russie déclare officiellement la guerre à l’Ukraine. C’est le début d’une longue série de combats comprenant des bombardements détruisant la faune et la flore locale.</li>
+                        <li>28 Février = Nouveau rapport du <a href="/integration__francais/glossaire.html">GIEC</a> . Le dérèglement climatique s’est encore accéléré. Nous n’avons plus que 8 ans à peine pour changer les choses avant qu’il ne soit trop tard. C’est le dernier espoir pour la nature.</li>
+                        <li>3 Juillet = Effondrement du glacier de la Marmolada dans les Alpes Italiennes. Un bloc de glace s’est détaché du glacier avant de dévaler à une vitesse de 300 km/h. La veille, un record de température avait été enregistré au sommet du glacier (10 °C).</li>
+                        <li>Été = La Terre brûle. De nombreux pays font face à des feux de forêt dévastateurs et à une vague de chaleur encore jamais vue. En Gironde, le bilan est pour l’instant de 26 726 hectares de forêt brûlée depuis le début de l’année.</li>
+                        <li>31 Août = Au Pakistan, la mousson est bien plus dense qu’en temps normal. A cette date la surface totale de terre inondée dans le pays est de 86 000 kilomètres carrés. Cela représente presque 10 % de la surface du pays.</li>
+                    </ul>
+
+                    <div>
+                        <img src="/public/img/Incendie Gironde 1.webp" alt="carte des incendies en France">
+                        <legend>Carte des incendies en France</legend>
+                    </div>
+
+                    <aside>
+                        <img src="/public/icones/chevron-down.webp" alt="flèche bas">
+                        <img src="/public/icones/chevron-up.webp" alt="flèche haut">
+                    </aside>
+
+                    <h2>Et la Terre dans le futur ?</h2>
+
+                    <p>La liste précédente est une liste non exhaustive des conséquences du réchauffement climatique en 2022. Pourtant, elle est déjà bien remplie et représentative d’un monde en déclin. Certes, il y a toujours eu des événements de ce genre dans l’histoire mais ils sont de plus en plus fréquents et de plus en plus intenses. Des glaciers comme la Marmolada risquent de disparaître à l’avenir. Des forêts entières seront encore détruites et ne repousseront pas ou dans de trop nombreuses années. Dans ces forêts, la faune et la flore sont à l’agonie. Des espèces entières sont menacées ou vont être menacées à l’avenir. Les catastrophes naturelles s’accentuent comme au Pakistan et seront encore plus régulières au fil des années. Si ces catastrophes continuent nous devrons faire face à une vague de migration climatique et à des conflits liés à l’accès aux ressources. Tout cela est signe d’une planète en souffrance et en déclin.</p>
+                    
+                    <img src="/public/img/Inondation Pakistan 1.webp" alt="photo inondation Pakistan">
+                    <legend>Inondation Pakistan</legend>
+
+                    <aside>
+                        <img src="/public/icones/chevron-down.webp" alt="flèche bas">
+                        <img src="/public/icones/chevron-up.webp" alt="flèche haut">
+                    </aside>
+
+                    <p>Mais nous courons aussi vers notre propre fin en détruisant notre propre habitat. Je ne sais pas de quoi sera fait le futur mais je sais une chose : malgré ces événements, malgré ce qui risque d’arriver, les gouvernements continuent de nier l’évidence. Les gens continuent de fermer les yeux. De nombreux organismes tentent désespérément de nous alerter. Pourtant rien ne change et cette liste s’agrandit chaque année. Et si cette liste s’agrandit, comment ne pas craindre une fin certaine ? Une disparition de toute la faune et la flore. Une destruction de la Terre entière. Et par conséquent une fin de l’humanité. Donc oui je me demande quels en seront les conséquences ? Est-ce que mes futurs enfants pourront vivre une belle vie ? Y aura-t-il une future génération ? Est-ce que les jours sont comptés pour l’humanité ? Quand est ce que nous allons agir ? Voilà des questions que beaucoup de gens se posent aussi.</p>
+
+                    <img src="/public/img/Caroussel.webp" alt="photos faune et flore détruite">
+                    <legend>Braconnage - Déforestation - Fonte des glaciers</legend>
+                </article>
+           </section> 
+        </main>
+
+        <footer>
+
+            <div>
+              <h3>Me suivre</h3>
+              <ul>
+
+                <a href="https://www.instagram.com/cine_feel_m/">
+                    <img src="/public/icones/instagram 1.webp" alt="logo Instagram">
+                </a>
+
+                <a href="#">
+                    <img src="/public/icones/facebook 1.webp" alt="logo Facebook">
+                </a>
+
+                <a href="https://www.youtube.com/channel/UCeTZe0cGb4BJasd4RHtFR9w">
+                    <img src="/public/icones/youtube (1) 1.webp" alt="logo Youtube">
+                </a>
+
+                <a href="#">
+                    <img src="/public/icones/mail 1.webp" alt="logo mail">
+                </a>
+
+              </ul>
+            </div>
+
+            <nav>
+                <a href="/integration__francais/a_propos.html">
+                    <h3>A propos</h3>
+                </a>
+            </nav>
+
+            <nav>
+                <a href="/integration__francais/glossaire.html">
+                    <h3>Glossaire</h3>
+                </a>
+            </nav>
+
+            <nav>
+                <a href="/integration__francais/autres_projets.html">
+                    <h3>Autres Projets</h3>
+                </a>
+            </nav>
+
+            <nav>
+                <a href="/integration__francais/contact.html">
+                    <h3>Contact</h3>
+                </a>
+            </nav>
+        
+            <div>
+                <h3>Mention Légale</h3>
+                <img src="/public/icones/MMI 1.webp" alt="logo du MMI">
+                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
+            </div>
+
+            <nav>
+                <p>Xavier REBUFFONI MMI 1 C1</p>
+            </nav>
+        
+          </footer>
+    </body>
+
+</html>

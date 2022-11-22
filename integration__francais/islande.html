@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+x-data="{"
+>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projet individuel MMI Montbéliard">
+    
+        <title>Earth Topic</title>
+
+        <script defer src="https://unpkg.com/alpinejs"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+        <style>
+            .menu {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100vW;
+            height: 100vH;
+            background: #fff;
+            display: grid;
+            place-content: center;
+            }
+            .header__menuBtn {
+            position: relative;
+            z-index: 10;
+            }
+            .noscroll,
+            .noscroll body {
+            overflow: hidden;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <a href="/integration__anglais/index.htm">
+                <img src="/public/icones/Flag_of_France_(1794–1815,_1830–1974,_2020–present) 1.webp" alt="logo changement de langue">
+            </a>
+            
+            <a href="/integration__francais/index.html">
+                <img src="/public/icones/Logo site 1.webp" alt="logo du site">
+            </a>
+
+            <button aria-controls="mainNav" 
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="header__menuBtn"
+            >
+                <img src="/public/icones/menu-burger 1.webp" alt="logo menu burger">
+            </button>
+
+            <nav id="mainNav" 
+            x-show="menuIsOpen" 
+            x-transition.duration.800ms
+            class="menu"
+            >
+                <ul>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen">Désolation</a>
+                            <p>
+                                <a href="/integration__francais/craintes.html" x-show="isOpen">Craintes</a>
+                            </p>
+                            <p>
+                                <a href="/integration__francais/interstellar.html" x-show="isOpen">Interstellar</a>
+                            </p>
+                            <p>
+                                <a href="/integration__francais/islande.html" x-show="isOpen">Islande</a>
+                            </p>
+                        </section>
+                    </li>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen">Espoir</a>
+                            <p>
+                                <a href="/integration__francais/espoir.html" x-show="isOpen">Espoir</a>
+                            </p>
+                            <p>
+                                <a href="/integration__francais/livre.html" x-show="isOpen">Là où chantent les écrevisses</a>
+                            </p>
+                            <p>
+                                <a href="/integration__francais/carolina.html" x-show="isOpen">Carolina</a>
+                            </p>
+                        </section>
+                    </li>
+                    <li><a href="/integration__francais/comment_agir.html">Comment agir ?</a></li>
+                    <li><a href="/integration__francais/glossaire.html">Glossaire</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+           <section>
+                <article>
+                    <h1>L'ISLANDE FACE AU RECHAUFFEMENT CLIMATIQUE</h1>
+                    <img src="/public/img/Glacier Islande.webp" alt="Glacier Islande" alt width="331">
+                    
+                    <header>
+                        <p>Si vous n’êtes toujours pas convaincu de ce qui est en train de se dérouler, voyons un exemple plus concret. L’Islande est un des nombreux pays déjà touché par les conséquences du réchauffement climatique avec une surface de glace qui rétrécit d’année en année. Ce pays met donc en lumière ce que nous pouvons craindre pour le futur.</p>
+                    </header>
+
+                    <aside>
+                        <img src="/public/icones/chevron-down.webp" alt="flèche bas">
+                        <img src="/public/icones/chevron-up.webp" alt="flèche haut">
+                    </aside>
+
+                    <div>
+                        <h2>"Terre de feu et de glace"</h2>
+
+                        <p>On pourrait se dire que les conséquences du réchauffement climatique n’existent que dans les films de science fiction comme <a href="/integration__francais/glossaire.html">Interstellar</a>. Pourtant ce n’est pas le cas, certaines conséquences sont déjà visibles en ce moment et le seront encore plus à l’avenir. Pour s’en rendre compte j’ai choisi un exemple <a href="/integration__francais/glossaire.html">l'Islande</a>. Ce pays qui s’étend sur une île de plus de 200 000 km² et où plus de 300 000 habitants y vivent. L’Islande ne fait pas partie de l’Union Européenne. Mais elle adhère à d’autres organisations comme <a href="/integration__francais/glossaire.html">l'OTAN</a> ou <a href="/integration__francais/glossaire.html">l'ONU</a>. Chaque année, de nombreux touristes viennent profiter de la beauté de ce pays avec ses paysages grandioses. L’Islande est d’ailleurs réputée pour son dépaysement total et sa biodiversité d’une grande richesse. Sur cette île, la nature règne en maître et offre de somptueux spectacles entre la chaleur des volcans et le froid de la glace. Ceci lui vaut d’ailleurs le surnom de « terre de feu et de glace ». Ces paysages ont servi par ailleurs de lieu de tournage pour le célèbre film Interstellar <a href="/integration__francais/interstellar.html">(voir article précédent)</a>.</p>
+
+                        <img src="/public/img/Tournage Interstellar 1.webp" alt="Tournage Interstellar" alt width="175">
+                        <legend>Photo de tournage du film Interstellar</legend>
+
+                        <p>Ce pays est aussi très important aujourd’hui par sa position vis à vis du réchauffement climatique.</p>
+                    </div>
+
+                    <aside>
+                        <img src="/public/icones/chevron-down.webp" alt="flèche bas">
+                        <img src="/public/icones/chevron-up.webp" alt="flèche haut">
+                    </aside>
+
+                    <div>
+                        <h2>Un pays en danger</h2>
+
+                        <p>En effet, l’Islande pourrait changer radicalement à l’avenir. C’est une des conséquences du réchauffement climatique dont tout le monde parle : la fonte des glaciers. Dans un pays constitué en grande partie de glace comme l’Islande cela pourrait être dramatique. Ce phénomène est déjà en marche depuis des décennies. Depuis l’an 2000, la surface de glace perdue est énorme et cela pourrait s’aggraver dans le futur. D’après de récentes études, d’ici 200 à 300 ans il se pourrait qu’il n’y ait plus du tout de glace en Islande. La biodiversité pourrait radicalement changer et de nombreuses espèces pourraient disparaître. Plus de paysages grandioses non plus. Rien que de la désolation. Mais cela pourrait aussi impacter en profondeur les habitants de cette île. Si la biodiversité change, les habitudes des humains changeront obligatoirement. Plus la même nourriture. Plus le même terrain pour évoluer. Tout ce sur quoi le pays se base actuellement pourrait s’éteindre avec les glaciers.</p>
+
+                        <img src="/public/img/Fonte des glaciers en Islande 1.webp" alt="Fonte des glaciers en Islande" alt width="239">
+                        <legend>Avant/Après d’un glacier en Islande</legend>
+
+                        <p>Ce n’est pas tout, si ce phénomène peut impacter l’Islande ce n’est que la partie visible de l’iceberg. Car, en fondant, les glaciers déversent des icebergs dans l’océan ce qui contribue à l’augmentation du niveau de la mer. Ainsi, toutes les populations côtières du monde pourraient être touchées.</p>
+                    </div>
+
+                    <button>
+                        <a href="/integration__francais/friseautrespays.html">
+                            Voir d'autres pays touchés par le réchauffement climatique <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                        </a>
+                    </button>
+                </article>
+           </section> 
+        </main>
+
+        <footer>
+
+            <div>
+              <h3>Me suivre</h3>
+              <ul>
+
+                <a href="https://www.instagram.com/cine_feel_m/">
+                    <img src="/public/icones/instagram 1.webp" alt="logo Instagram">
+                </a>
+
+                <a href="#">
+                    <img src="/public/icones/facebook 1.webp" alt="logo Facebook">
+                </a>
+
+                <a href="https://www.youtube.com/channel/UCeTZe0cGb4BJasd4RHtFR9w">
+                    <img src="/public/icones/youtube (1) 1.webp" alt="logo Youtube">
+                </a>
+
+                <a href="#">
+                    <img src="/public/icones/mail 1.webp" alt="logo mail">
+                </a>
+
+              </ul>
+            </div>
+
+            <nav>
+                <a href="/integration__francais/a_propos.html">
+                    <h3>A propos</h3>
+                </a>
+            </nav>
+
+            <nav>
+                <a href="/integration__francais/glossaire.html">
+                    <h3>Glossaire</h3>
+                </a>
+            </nav>
+
+            <nav>
+                <a href="/integration__francais/autres_projets.html">
+                    <h3>Autres Projets</h3>
+                </a>
+            </nav>
+
+            <nav>
+                <a href="/integration__francais/contact.html">
+                    <h3>Contact</h3>
+                </a>
+            </nav>
+        
+            <div>
+                <h3>Mention Légale</h3>
+                <img src="/public/icones/MMI 1.webp" alt="logo du MMI">
+                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
+            </div>
+
+            <nav>
+                <p>Xavier REBUFFONI MMI 1 C1</p>
+            </nav>
+        
+          </footer>
+    </body>
+
+</html>

@@ -12,6 +12,8 @@ x-data="{"
         <title>Earth Topic</title>
 
         <script defer src="https://unpkg.com/alpinejs"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
         <style>
             .menu {
             position:fixed;
@@ -37,17 +39,13 @@ x-data="{"
 
     <body>
         <header>
-            <button>
-                <a href="/integration__anglais/index.htm">
-                    <img src="/public/icones/Flag_of_France_(1794–1815,_1830–1974,_2020–present) 1.webp" alt="logo changement de langue">
-                </a>
-            </button>
+            <a href="/integration__anglais/index.htm">
+                <img src="/public/icones/Flag_of_France_(1794–1815,_1830–1974,_2020–present) 1.webp" alt="logo changement de langue">
+            </a>
 
-            <button>
-                <a href="/integration__francais/index.html">
-                    <img src="/public/icones/Logo site 1.webp" alt="logo du site">
-                </a>
-            </button>
+            <a href="/integration__francais/index.html">
+                <img src="/public/icones/Logo site 1.webp" alt="logo du site">
+            </a>
 
             <button aria-controls="mainNav" 
             @click="menuIsOpen = ! menuIsOpen" 
@@ -62,8 +60,34 @@ x-data="{"
             class="menu"
             >
                 <ul>
-                    <li>Désolation</li>
-                    <li>Espoir</li>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen">Désolation</a>
+                            <p>
+                                <a href="/integration__francais/craintes.html" x-show="isOpen">Craintes</a>
+                            </p>
+                            <p>
+                                <a href="/integration__francais/interstellar.html" x-show="isOpen">Interstellar</a>
+                            </p>
+                            <p>
+                                <a href="/integration__francais/islande.html" x-show="isOpen">Islande</a>
+                            </p>
+                        </section>
+                    </li>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen">Espoir</a>
+                            <p>
+                                <a href="/integration__francais/espoir.html" x-show="isOpen">Espoir</a>
+                            </p>
+                            <p>
+                                <a href="/integration__francais/livre.html" x-show="isOpen">Là où chantent les écrevisses</a>
+                            </p>
+                            <p>
+                                <a href="/integration__francais/carolina.html" x-show="isOpen">Carolina</a>
+                            </p>
+                        </section>
+                    </li>
                     <li><a href="/integration__francais/comment_agir.html">Comment agir ?</a></li>
                     <li><a href="/integration__francais/glossaire.html">Glossaire</a></li>
                 </ul>
@@ -75,73 +99,87 @@ x-data="{"
 
             <h1>Earth Topic</h1>
 
-            <img src="/public/img/Bouton.webp" alt="bouton Terre">
+            <img src="/public/img/Bouton.webp" alt="bouton Terre" alt width="216">
 
             <section>
                 <p>La Terre…. Cette planète recouverte d’eau et abritant la vie. Cette bonne vieille planète qui nous permet de vivre et de subvenir à tous nos besoins. Cette planète qui malgré tous ses sacrifices continuent d’être traitée injustement. Cette planète que nous ferions mieux de protéger plutôt que de détruire si nous voulons continuer à avoir des lendemains heureux. Alors voilà Earthopic c’est à la fois une utopie et une dystopie. Une utopie si nous agissons maintenant en respectant la richesse de cette terre ; une dystopie si au contraire nous continuons de la traiter injustement en détruisant tout sur notre passage. Ce site aura pour but de vous présenter ces deux possibilités mais c’est à vous d’agir pour décider du meilleur futur pour l’humanité.</p>
             </section>
 
             <section>
-                <img src="/public/img/Terre en feu.webp" alt="image de la terre en train de bruler">
+                <img src="/public/img/Terre en feu.webp" alt="image de la terre en train de bruler" alt width="256">
                 <h2>Un monde en péril ?</h2>
                 <p>Si on fait le constat de la Terre en 2022 et des messages de prévention des ONG, comment ne pas craindre un avenir où la nature sera complètement détruite ? Si on veut pouvoir agir il faut déjà ouvrir les yeux sur ce qui risque d’arriver si on ne fait rien.</p>
-                <a href="/integration__francais/craintes.html">
-                    Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
-                </a>
+                <button>
+                    <a href="/integration__francais/craintes.html">
+                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                    </a>
+                </button>
             </section>
 
             <section>
-                <img src="/public/img/Interstellar.webp" alt="affiche film Interstellar">
+                <img src="/public/img/Interstellar.webp" alt="affiche film Interstellar" alt width="233">
                 <h2>Interstellar</h2>
                 <p>Film de science-fiction sorti en 2014 et réalisé par Christopher Nolan, Interstellar est l’exemple parfait de ce qui pourrait se passer dans le futur si nous ne faisons rien. Cette histoire est de la science-fiction pourtant cela pourrait ne pas être si loin de la réalité ou dûmoins d’une réalité future.</p>
-                <a href="/integration__francais/interstellar.html">
-                    Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
-                </a>
+                <button>
+                    <a href="/integration__francais/interstellar.html">
+                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                    </a>
+                </button>
             </section>
 
             <section>
-                <img src="/public/img/Glacier Islande.webp" alt="image glacier en Islande">
+                <img src="/public/img/Glacier Islande.webp" alt="image glacier en Islande" alt width="252">
                 <h2>Islande</h2>
                 <p>Si vous n’êtes toujours pas convaincu de ce qui est en train de se dérouler, voyons un exemple plus concret. L’Islande est un des nombreux pays déjà touché par les conséquences du réchauffement climatique avec une surface de glace qui rétrécit d’année en année. Ce pays met donc en lumière ce que nous pouvons craindre pour le futur.</p>
-                <a href="/integration__francais/islande.html">
-                    Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
-                </a>
+                <button>
+                    <a href="/integration__francais/islande.html"> 
+                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                    </a>
+                </button>
             </section>
 
             <section>
-                <img src="/public/img/logo.webp" alt="image d'arbre">
+                <img src="/public/img/logo.webp" alt="image d'arbre" alt width="266">
                 <h2>Espoir</h2>
                 <p>Mais tout n’est pas perdu, il reste toujours un espoir. Cet espoir est représenté par la nature. Si nous vivons en cohésion avec elle plutôt que de la détruire, nous pourrions changer la donne. Le défi de ce siècle, c’est de réaliser tout ce que peut nous apporter la nature. Et ce futur n’est pas qu’une histoire fantaisiste. Il peut réellement exister si nous agissons.</p>
-                <a href="/integration__francais/espoir.html">
-                    Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
-                </a>
+                <button>
+                    <a href="/integration__francais/espoir.html">
+                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                    </a>
+                </button>
             </section>
 
             <section>
-                <img src="/public/img/Là où chantent les écrevisses 1.webp" alt="couverture du livre Là où chantent les écrevisses">
+                <img src="/public/img/Là où chantent les écrevisses 1.webp" alt="couverture du livre Là où chantent les écrevisses" alt width="209">
                 <h2>"Là où chantent les écrevisses"</h2>
                 <p>Pour vous prouver que ce monde peut exister, prenons un livre. Ce dernier s’appelle « Là où chantent les écrevisses » et a été écrit par Delia Owens. L’histoire suit une jeune fille vivant seule dans les marais de la Caroline du Nord. Sa vie est l’exemple parfait de la cohésion possible avec la nature.</p>
-                <a href="/integration__francais/livre.html">
-                    Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
-                </a>
+                <button>
+                    <a href="/integration__francais/livre.html">
+                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                    </a>
+                </button>
             </section>
 
             <section>
-                <img src="/public/img/Carolina Taylor Swift.webp" alt="affiche musique Carolina Taylor Swift">
+                <img src="/public/img/Carolina Taylor Swift.webp" alt="affiche musique Carolina Taylor Swift" alt width="322">
                 <h2>"Carolina"</h2>
                 <p>Cette musique est celle tirée de l’adaptation cinématographique du livre « Là où chantent les écrevisses ». Elle a été écrite par la talentueuse Taylor Swift. Les paroles de cette musique rappellent non seulement la vie de l’héroïne principale du livre mais aussi et surtout la nature. C’est pour cette dernière raison qu’elle est particulièrement intéressante, tant au niveau des paroles que de la musique.</p>
-                <a href="/integration__francais/carolina.html">
-                    Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
-                </a>
+                <button> 
+                    <a href="/integration__francais/carolina.html">
+                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                    </a>
+                </button>
             </section>
 
             <section>
-                <img src="/public/img/Comment_agir.webp" alt="illustration d'une manifestation">
+                <img src="/public/img/Comment_agir.webp" alt="illustration d'une manifestation" alt width="329">
                 <h2>Comment agir ?</h2>
                 <p>Je vous ai présenté deux futurs possibles, mais c’est à vous de décider celui que vous voulez à présent. Pour vous aider, si vous choisissez le deuxième futur, je vous ai indiqué une sélection de quelques sites qui proposent des plans d’actions concrets et réalisables à votre échelle.</p>
-                <a href="/integration__francais/comment_agir.html">
-                    Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
-                </a>
+                <button> 
+                    <a href="/integration__francais/comment_agir.html">
+                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                    </a>
+                </button>
             </section>
 
         </main>

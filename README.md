@@ -1,6 +1,6 @@
 - NOM : Rebuffoni
 - PRÉNOM : Xavier
-- URL du site :
+- URL du site : 
 - URL FIGMA : https://www.figma.com/file/lvzfWqBHtmVfAS2zSDXZv1/Maquettes-projet-individuel-%E2%80%94-Xavier-Rebuffoni?node-id=194%3A1259&t=OKyBPgqWPPiYBouF-1 
 
 # Structure de départ pour le projet individuel.

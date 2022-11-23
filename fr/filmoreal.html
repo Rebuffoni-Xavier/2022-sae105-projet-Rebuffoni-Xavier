@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+x-data="{"
+>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projet individuel MMI Montbéliard">
+    
+        <title>Earth Topic</title>
+
+        <script defer src="https://unpkg.com/alpinejs"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+        <style>
+            .menu {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100vW;
+            height: 100vH;
+            background: #fff;
+            display: grid;
+            place-content: center;
+            }
+            .header__menuBtn {
+            position: relative;
+            z-index: 10;
+            }
+            .noscroll,
+            .noscroll body {
+            overflow: hidden;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'">
+                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5) 1.webp" alt="changer la langue en anglais">
+            </a>
+            
+            <a href="/fr/index.html">
+                <img src="/public/icones/Logo site 1.webp" alt="logo du site">
+            </a>
+
+            <button aria-controls="mainNav" 
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="header__menuBtn"
+            >
+                <img src="/public/icones/menu-burger 1.webp" alt="logo menu burger">
+            </button>
+
+            <nav id="mainNav" 
+            x-show="menuIsOpen" 
+            x-transition.duration.800ms
+            class="menu"
+            >
+                <ul>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen">Désolation</a>
+                            <p>
+                                <a href="/fr/craintes.html" x-show="isOpen">Craintes</a>
+                            </p>
+                            <p>
+                                <a href="/fr/interstellar.html" x-show="isOpen">Interstellar</a>
+                            </p>
+                            <p>
+                                <a href="/fr/islande.html" x-show="isOpen">Islande</a>
+                            </p>
+                        </section>
+                    </li>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen">Espoir</a>
+                            <p>
+                                <a href="/fr/espoir.html" x-show="isOpen">Espoir</a>
+                            </p>
+                            <p>
+                                <a href="/fr/livre.html" x-show="isOpen">Là où chantent les écrevisses</a>
+                            </p>
+                            <p>
+                                <a href="/fr/carolina.html" x-show="isOpen">Carolina</a>
+                            </p>
+                        </section>
+                    </li>
+                    <li><a href="/fr/comment_agir.html">Comment agir ?</a></li>
+                    <li><a href="/fr/glossaire.html">Glossaire</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+           <section>
+                <article>
+                    <h1>CHRISTOPHER NOLAN : FILMOGRAPHIE</h1>
+
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=RHRnYeZL5Pc">
+                            <img src="/public/img/Following 1.webp" alt="Affiche du film Following, le suiveur cliquable pour accéder à la bande annonce du film" alt width="227">
+                        </a>
+                        <h2>FOLLOWING, LE SUIVEUR</h2>
+                        <h3>1998</h3>
+                        <p>Premier film de Christopher Nolan, il signe un début réussis avec un film très bien reçu par le public.</p>
+                    </div>
+
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=rX7nZxY8OFk">
+                            <img src="/public/img/Memento 1.webp" alt="Affiche du film Memento cliquable pour accéder à la bande annonce du film" alt width="227">
+                        </a>
+                        <h2>MEMENTO</h2>
+                        <h3>2000</h3>
+                    </div>
+
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=ddnME9Hob_M">
+                            <img src="/public/img/Insomnia 1.webp" alt="Affiche du film Insomnia cliquable pour accéder à la bande annonce du film" alt width="227">
+                        </a>
+                        <h2>INSOMNIA</h2>
+                        <h3>2002</h3>
+                    </div>
+
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=jXrFsn9pcZY">
+                            <img src="/public/img/Batman Begins 1.webp" alt="Affiche du film Batman Begins cliquable pour accéder à la bande annonce du film" alt width="227">
+                        </a>
+                        <h2>BATMAN BEGINS</h2>
+                        <h3>2005</h3>
+                        <p>Christopher Nolan se lance dans l’univers des super-héro en réalisant une nouvelle trilogie sur le célèbre Chevalier Noir de Gotham.</p>
+                    </div>
+
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=6L9ZAH09En4">
+                            <img src="/public/img/Le Prestige 1.webp" alt="Affiche du film Le Prestige cliquable pour accéder à la bande annonce du film" alt width="227">
+                        </a>
+                        <h2>LE PRESTIGE</h2>
+                        <h3>2006</h3>
+                    </div>
+
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=UMgb3hQCb08">
+                            <img src="/public/img/The Dark Knight 1.webp" alt="Affiche du film The Dark Knight cliquable pour accéder à la bande annonce du film" alt width="227">
+                        </a>
+                        <h2>THE DARK KNIGHT, LE CHEVALIER NOIR</h2>
+                        <h3>2008</h3>
+                    </div>
+
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=CPTIgILtna8">
+                            <img src="/public/img/Inception 1.webp" alt="Affiche du film Inception cliquable pour accéder à la bande annonce du film" alt width="227">
+                        </a>
+                        <h2>INCEPTION</h2>
+                        <h3>2010</h3>
+                    </div>
+
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=6ZcgnyUtHp4">
+                            <img src="/public/img/The Dark Knight Rises 1.webp" alt="Affiche du film The Dark Knight Rises cliquable pour accéder à la bande annonce du film" alt width="227">
+                        </a>
+                        <h2>THE DARK KNIGHT RISES</h2>
+                        <h3>2012</h3>
+                    </div>
+
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=VaOijhK3CRU&t">
+                            <img src="/public/img/Interstellar 3.webp" alt="Affiche du film Interstellar cliquable pour accéder à la bande annonce du film" alt width="227">
+                        </a>
+                        <h2>INTERSTELLAR</h2>
+                        <h3>2014</h3>
+                        <p>Plus de détail dans l’article dédié sur ce film.</p>
+                        <button>
+                            <a href="/fr/interstellar.html">
+                                Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                            </a>
+                        </button>
+                    </div>
+
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=chRUCIk3K94">
+                            <img src="/public/img/Dunkerke 1.webp" alt="Affiche du film Dunkerque cliquable pour accéder à la bande annonce du film" alt width="227">
+                        </a>
+                        <h2>DUNKERQUE</h2>
+                        <h3>2017</h3>
+                        <p>Avec Dunkerque, le réalisateur se lance dans le genre historique en proposant un film sur la célèbre bataille de Dunkerque.</p>
+                    </div>
+
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=NQ5p6WYYK-s">
+                            <img src="/public/img/Tenet 1.webp" alt="Affiche du film Tenet cliquable pour accéder à la bande annonce du film" alt width="227">
+                        </a>
+                        <h2>TENET</h2>
+                        <h3>2020</h3>
+                    </div>
+
+                    <div>
+                        <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=296168.html">
+                            <img src="/public/img/Oppenheimer 1.webp" alt="Affiche du film Oppenheimer cliquable pour accéder à la bande annonce du film" alt width="227">
+                        </a>
+                        <h2>OPPENHEIMER</h2>
+                        <h3>2023</h3>
+                        <p>Le prochain film de Christopher Nolan devrait sortir en 2023. L’histoire va se concentrer sur la création de la bombe nucléaire.</p>
+                    </div>
+
+                    <div>
+                        <img src="/public/img/Christopher Nolan 1.webp" alt="Photo du réalisateur Christopher Nolan" alt width="227">
+                        <h2>CHRISTOPHER NOLAN</h2>
+                        <a href="https://www.allocine.fr/personne/fichepersonne_gen_cpersonne=30367.html">Plus d'informations sur le réalisateur</a>
+                    </div>
+                    
+                    <aside>
+                        <img src="/public/icones/chevron-down.webp" alt="flèche bas">
+                        <img src="/public/icones/chevron-up.webp" alt="flèche haut">
+                    </aside>
+                </article>
+           </section> 
+        </main>
+
+        <footer>
+
+            <div>
+              <h5>Me suivre</h5>
+              <ul>
+
+                <a href="https://www.instagram.com/cine_feel_m/">
+                    <img src="/public/icones/instagram 1.webp" alt="logo Instagram">
+                </a>
+
+                <a href="#">
+                    <img src="/public/icones/facebook 1.webp" alt="logo Facebook">
+                </a>
+
+                <a href="https://www.youtube.com/channel/UCeTZe0cGb4BJasd4RHtFR9w">
+                    <img src="/public/icones/youtube (1) 1.webp" alt="logo Youtube">
+                </a>
+
+                <a href="#">
+                    <img src="/public/icones/mail 1.webp" alt="logo mail">
+                </a>
+
+              </ul>
+            </div>
+
+            <nav>
+                <a href="/fr/a_propos.html">
+                    <h5>A propos</h5>
+                </a>
+            </nav>
+
+            <nav>
+                <a href="/fr/glossaire.html">
+                    <h5>Glossaire</h5>
+                </a>
+            </nav>
+
+            <nav>
+                <a href="/fr/autres_projets.html">
+                    <h5>Autres Projets</h5>
+                </a>
+            </nav>
+
+            <nav>
+                <a href="/fr/contact.html">
+                    <h5>Contact</h5>
+                </a>
+            </nav>
+        
+            <div>
+                <h5>Mention Légale</h5>
+                <img src="/public/icones/MMI 1.webp" alt="logo du MMI">
+                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
+            </div>
+
+            <div>
+                <p>Xavier REBUFFONI MMI 1 C1</p>
+            </div>
+        
+          </footer>
+    </body>
+
+</html>

@@ -1,0 +1,39 @@
+.header_flag {
+    width: 58px;
+    height: 37px;
+}
+
+.header_logo {
+    width: 141;
+    height: 39;
+}
+
+.menu {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vW;
+    height: 100vH;
+    background: #0F390E;
+    display: grid;
+    place-content: left;
+    }
+    .header__menuBtn {
+    position: relative;
+    z-index: 10;
+    }
+    .noscroll,
+    .noscroll body {
+    overflow: hidden;
+}
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}

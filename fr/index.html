@@ -11,47 +11,28 @@ x-data="{"
     
         <title>Earth Topic</title>
 
+        <link rel="stylesheet" href="/src/css/général/footer.css">
+        <link rel="stylesheet" href="/src/css/général/header.css">
+
         <script defer src="https://unpkg.com/alpinejs"></script>
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-        <style>
-            .menu {
-            position:fixed;
-            top: 0;
-            left: 0;
-            width: 100vW;
-            height: 100vH;
-            background: #fff;
-            display: grid;
-            place-content: center;
-            }
-            .header__menuBtn {
-            position: relative;
-            z-index: 10;
-            }
-            .noscroll,
-            .noscroll body {
-            overflow: hidden;
-            }
-        </style>
-
     </head>
 
     <body>
-        <header>
-            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'">
-                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5) 1.webp" alt="changer la langue en anglais">
+        <header class="header">
+            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="header_langue">
+                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header_flag">
             </a>
 
-            <a href="/fr/index.html">
-                <img src="/public/icones/Logo site 1.webp" alt="logo du site">
+            <a href="/fr/index.html" class="header_start">
+                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header_logo">
             </a>
 
             <button aria-controls="mainNav" 
             @click="menuIsOpen = ! menuIsOpen" 
             class="header__menuBtn"
             >
-                <img src="/public/icones/menu-burger 1.webp" alt="logo menu burger">
+                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger">
             </button>
 
             <nav id="mainNav" 
@@ -99,118 +80,100 @@ x-data="{"
 
         </header>
 
-        <main>
+        <main class="home">
 
-            <h1>Earth Topic</h1>
+            <h1 class="titre_site">Earth Topic</h1>
 
-            <img src="/public/img/Bouton.webp" alt="bouton Terre" alt width="216">
+            <img src="/public/img/Bouton.webp" alt="bouton Terre" width="216">
 
             <section>
                 <p>La Terre…. Cette planète recouverte d’eau et abritant la vie. Cette bonne vieille planète qui nous permet de vivre et de subvenir à tous nos besoins. Cette planète qui malgré tous ses sacrifices continuent d’être traitée injustement. Cette planète que nous ferions mieux de protéger plutôt que de détruire si nous voulons continuer à avoir des lendemains heureux. Alors voilà Earthopic c’est à la fois une utopie et une dystopie. Une utopie si nous agissons maintenant en respectant la richesse de cette terre ; une dystopie si au contraire nous continuons de la traiter injustement en détruisant tout sur notre passage. Ce site aura pour but de vous présenter ces deux possibilités mais c’est à vous d’agir pour décider du meilleur futur pour l’humanité.</p>
             </section>
 
             <section>
-                <img src="/public/img/Terre en feu.webp" alt="image de la terre en train de bruler" alt width="256">
+                <img src="/public/img/Terre_en_feu.webp" alt="image de la terre en train de bruler" width="256">
                 <h2>Un monde en péril ?</h2>
                 <p>Si on fait le constat de la Terre en 2022 et des messages de prévention des ONG, comment ne pas craindre un avenir où la nature sera complètement détruite ? Si on veut pouvoir agir il faut déjà ouvrir les yeux sur ce qui risque d’arriver si on ne fait rien.</p>
-                <button>
-                    <a href="/fr/craintes.html">
-                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
-                    </a>
-                </button>
+                <a href="/fr/craintes.html">
+                    Lire l'article <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche">
+                </a>
             </section>
 
             <section>
-                <img src="/public/img/Interstellar.webp" alt="affiche film Interstellar" alt width="233">
+                <img src="/public/img/Interstellar.webp" alt="affiche film Interstellar" width="233">
                 <h2>Interstellar</h2>
                 <p>Film de science-fiction sorti en 2014 et réalisé par Christopher Nolan, Interstellar est l’exemple parfait de ce qui pourrait se passer dans le futur si nous ne faisons rien. Cette histoire est de la science-fiction pourtant cela pourrait ne pas être si loin de la réalité ou dûmoins d’une réalité future.</p>
-                <button>
-                    <a href="/fr/interstellar.html">
-                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
-                    </a>
-                </button>
+                <a href="/fr/interstellar.html">
+                    Lire l'article <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche">
+                </a>
             </section>
 
             <section>
-                <img src="/public/img/Glacier Islande.webp" alt="image glacier en Islande" alt width="252">
+                <img src="/public/img/Glacier_Islande.webp" alt="image glacier en Islande" width="252">
                 <h2>Islande</h2>
                 <p>Si vous n’êtes toujours pas convaincu de ce qui est en train de se dérouler, voyons un exemple plus concret. L’Islande est un des nombreux pays déjà touché par les conséquences du réchauffement climatique avec une surface de glace qui rétrécit d’année en année. Ce pays met donc en lumière ce que nous pouvons craindre pour le futur.</p>
-                <button>
                     <a href="/fr/islande.html"> 
-                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                        Lire l'article <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche">
                     </a>
-                </button>
             </section>
 
             <section>
-                <img src="/public/img/logo.webp" alt="image d'arbre" alt width="266">
+                <img src="/public/img/logo.webp" alt="image d'arbre" width="266">
                 <h2>Espoir</h2>
                 <p>Mais tout n’est pas perdu, il reste toujours un espoir. Cet espoir est représenté par la nature. Si nous vivons en cohésion avec elle plutôt que de la détruire, nous pourrions changer la donne. Le défi de ce siècle, c’est de réaliser tout ce que peut nous apporter la nature. Et ce futur n’est pas qu’une histoire fantaisiste. Il peut réellement exister si nous agissons.</p>
-                <button>
                     <a href="/fr/espoir.html">
-                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                        Lire l'article <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche">
                     </a>
-                </button>
             </section>
 
             <section>
-                <img src="/public/img/Là où chantent les écrevisses 1.webp" alt="couverture du livre Là où chantent les écrevisses" alt width="209">
+                <img src="/public/img/Là_où_chantent_les_écrevisses_1.webp" alt="couverture du livre Là où chantent les écrevisses" width="209">
                 <h2>"Là où chantent les écrevisses"</h2>
                 <p>Pour vous prouver que ce monde peut exister, prenons un livre. Ce dernier s’appelle « Là où chantent les écrevisses » et a été écrit par Delia Owens. L’histoire suit une jeune fille vivant seule dans les marais de la Caroline du Nord. Sa vie est l’exemple parfait de la cohésion possible avec la nature.</p>
-                <button>
                     <a href="/fr/livre.html">
-                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                        Lire l'article <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche">
                     </a>
-                </button>
             </section>
 
             <section>
-                <img src="/public/img/Carolina Taylor Swift.webp" alt="affiche musique Carolina Taylor Swift" alt width="322">
+                <img src="/public/img/Carolina_Taylor_Swift.webp" alt="affiche musique Carolina Taylor Swift" width="322">
                 <h2>"Carolina"</h2>
-                <p>Cette musique est celle tirée de l’adaptation cinématographique du livre « Là où chantent les écrevisses ». Elle a été écrite par la talentueuse Taylor Swift. Les paroles de cette musique rappellent non seulement la vie de l’héroïne principale du livre mais aussi et surtout la nature. C’est pour cette dernière raison qu’elle est particulièrement intéressante, tant au niveau des paroles que de la musique.</p>
-                <button> 
+                <p>Cette musique est celle tirée de l’adaptation cinématographique du livre « Là où chantent les écrevisses ». Elle a été écrite par la talentueuse Taylor Swift. Les paroles de cette musique rappellent non seulement la vie de l’héroïne principale du livre mais aussi et surtout la nature. C’est pour cette dernière raison qu’elle est particulièrement intéressante, tant au niveau des paroles que de la musique.</p> 
                     <a href="/fr/carolina.html">
-                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                        Lire l'article <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche">
                     </a>
-                </button>
             </section>
 
             <section>
-                <img src="/public/img/Comment_agir.webp" alt="illustration d'une manifestation" alt width="329">
+                <img src="/public/img/Comment_agir.webp" alt="illustration d'une manifestation" width="329">
                 <h2>Comment agir ?</h2>
-                <p>Je vous ai présenté deux futurs possibles, mais c’est à vous de décider celui que vous voulez à présent. Pour vous aider, si vous choisissez le deuxième futur, je vous ai indiqué une sélection de quelques sites qui proposent des plans d’actions concrets et réalisables à votre échelle.</p>
-                <button> 
+                <p>Je vous ai présenté deux futurs possibles, mais c’est à vous de décider celui que vous voulez à présent. Pour vous aider, si vous choisissez le deuxième futur, je vous ai indiqué une sélection de quelques sites qui proposent des plans d’actions concrets et réalisables à votre échelle.</p> 
                     <a href="/fr/comment_agir.html">
-                        Lire l'article <img src="/public/icones/arrow-right 1.webp" alt="icone de fleche">
+                        Lire l'article <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche">
                     </a>
-                </button>
             </section>
 
         </main>
 
-        <footer>
+        <footer class="footer">
 
             <div>
               <h5>Me suivre</h5>
-              <ul>
-
                 <a href="https://www.instagram.com/cine_feel_m/">
-                    <img src="/public/icones/instagram 1.webp" alt="logo Instagram">
+                    <img src="/public/icones/instagram_1.webp" alt="logo Instagram">
                 </a>
 
                 <a href="#">
-                    <img src="/public/icones/facebook 1.webp" alt="logo Facebook">
+                    <img src="/public/icones/facebook_1.webp" alt="logo Facebook">
                 </a>
 
                 <a href="https://www.youtube.com/channel/UCeTZe0cGb4BJasd4RHtFR9w">
-                    <img src="/public/icones/youtube (1) 1.webp" alt="logo Youtube">
+                    <img src="/public/icones/youtube_(1)_1.webp" alt="logo Youtube">
                 </a>
 
                 <a href="#">
-                    <img src="/public/icones/mail 1.webp" alt="logo mail">
+                    <img src="/public/icones/mail_1.webp" alt="logo mail">
                 </a>
-
-              </ul>
             </div>
 
             <nav>
@@ -239,7 +202,7 @@ x-data="{"
         
             <div>
                 <h5>Mention Légale</h5>
-                <img src="/public/icones/MMI 1.webp" alt="logo du MMI">
+                <img src="/public/icones/MMI_1.webp" alt="logo du MMI">
                 <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
             </div>
 
@@ -247,7 +210,7 @@ x-data="{"
                 <p>Xavier REBUFFONI MMI 1 C1</p>
             </div>
         
-          </footer>
+        </footer>
     </body>
 
 </html>

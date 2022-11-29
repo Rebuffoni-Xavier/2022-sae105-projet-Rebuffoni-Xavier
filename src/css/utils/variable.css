@@ -1,0 +1,23 @@
+:root {
+/* Color styles */
+--couleur-tonique: rgba(114, 218, 105, 1);
+--couleur-dominante-2: rgba(255, 255, 255, 1);
+--menu: rgba(15, 57, 14, 1);
+--textes-menu: rgba(250, 255, 0, 1);
+--couleur-espoir: rgba(30, 49, 86, 1);
+--comment-agir-: rgba(86, 30, 64, 1);
+--couleur-liens: rgba(94, 201, 117, 1);
+
+/* Text-size styles */
+--titre-site: 96px;
+--texte-articles: 15px;
+--titres-menu: 36px;
+--changement-de-langue: 24px;
+--textes-pied-de-page: 10px;
+--titre-pied-de-page: 16px;
+--button: 16px;
+--titre-articles: 20px;
+--légende-article: 12px;
+--légende-guide-de--style: 14px;
+--liens-articles: 15px;
+}

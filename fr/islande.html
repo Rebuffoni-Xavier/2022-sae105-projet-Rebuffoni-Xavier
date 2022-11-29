@@ -62,7 +62,9 @@ x-data="{"
                 <ul>
                     <li>
                         <section x-data="{isOpen:false}">
-                            <a @click="isOpen = !isOpen">Désolation</a>
+                            <a @click="isOpen = !isOpen">
+                                Désolation <img src="/public/icones/plus.svg" alt="Icone plus">
+                            </a>
                             <p>
                                 <a href="/fr/craintes.html" x-show="isOpen">Craintes</a>
                             </p>
@@ -76,7 +78,9 @@ x-data="{"
                     </li>
                     <li>
                         <section x-data="{isOpen:false}">
-                            <a @click="isOpen = !isOpen">Espoir</a>
+                            <a @click="isOpen = !isOpen">
+                                Espoir <img src="/public/icones/plus.svg" alt="Icone plus">
+                            </a>
                             <p>
                                 <a href="/fr/espoir.html" x-show="isOpen">Espoir</a>
                             </p>

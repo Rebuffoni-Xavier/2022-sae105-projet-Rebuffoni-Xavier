@@ -11,8 +11,7 @@ x-data="{"
     
         <title>Earth Topic</title>
 
-        <link rel="stylesheet" href="/src/css/général/footer.css">
-        <link rel="stylesheet" href="/src/css/général/header.css">
+        <link rel="stylesheet" href="/src/css/pages/style.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -21,18 +20,18 @@ x-data="{"
     <body>
         <header class="header">
             <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="header_langue">
-                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header_flag">
+                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header_langue_flag">
             </a>
 
             <a href="/fr/index.html" class="header_start">
-                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header_logo">
+                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header_start_logo">
             </a>
 
             <button aria-controls="mainNav" 
             @click="menuIsOpen = ! menuIsOpen" 
             class="header__menuBtn"
             >
-                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger">
+                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger" class="header_menuBtn_logo">
             </button>
 
             <nav id="mainNav" 
@@ -157,7 +156,7 @@ x-data="{"
 
         <footer class="footer">
 
-            <div>
+            <div class="footer_div">
               <h5>Me suivre</h5>
                 <a href="https://www.instagram.com/cine_feel_m/">
                     <img src="/public/icones/instagram_1.webp" alt="logo Instagram">
@@ -176,37 +175,37 @@ x-data="{"
                 </a>
             </div>
 
-            <nav>
+            <nav class="footer_nav">
                 <a href="/fr/a_propos.html">
                     <h5>A propos</h5>
                 </a>
             </nav>
 
-            <nav>
+            <nav class="footer_nav">
                 <a href="/fr/glossaire.html">
                     <h5>Glossaire</h5>
                 </a>
             </nav>
 
-            <nav>
+            <nav class="footer_nav">
                 <a href="/fr/autres_projets.html">
                     <h5>Autres Projets</h5>
                 </a>
             </nav>
 
-            <nav>
+            <nav class="footer_nav">
                 <a href="/fr/contact.html">
                     <h5>Contact</h5>
                 </a>
             </nav>
         
-            <div>
+            <div class="footer_div">
                 <h5>Mention Légale</h5>
                 <img src="/public/icones/MMI_1.webp" alt="logo du MMI">
                 <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
             </div>
 
-            <div>
+            <div class="footer_div">
                 <p>Xavier REBUFFONI MMI 1 C1</p>
             </div>
         

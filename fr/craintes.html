@@ -11,47 +11,28 @@ x-data="{"
     
         <title>Earth Topic</title>
 
+        <link rel="stylesheet" href="/src/css/général/footer.css">
+        <link rel="stylesheet" href="/src/css/général/header.css">
+
         <script defer src="https://unpkg.com/alpinejs"></script>
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-        
-        <style>
-            .menu {
-            position:fixed;
-            top: 0;
-            left: 0;
-            width: 100vW;
-            height: 100vH;
-            background: #fff;
-            display: grid;
-            place-content: center;
-            }
-            .header__menuBtn {
-            position: relative;
-            z-index: 10;
-            }
-            .noscroll,
-            .noscroll body {
-            overflow: hidden;
-            }
-        </style>
-
     </head>
 
     <body>
-        <header>
-            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'">
-                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais">
+        <header class="header">
+            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="header_langue">
+                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header_langue_flag">
             </a>
-            
-            <a href="/fr/index.html">
-                <img src="/public/icones/Logo_site_1.webp" alt="logo du site">
+
+            <a href="/fr/index.html" class="header_start">
+                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header_start_logo">
             </a>
 
             <button aria-controls="mainNav" 
             @click="menuIsOpen = ! menuIsOpen" 
             class="header__menuBtn"
             >
-                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger">
+                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger" class="header_menuBtn_logo">
             </button>
 
             <nav id="mainNav" 

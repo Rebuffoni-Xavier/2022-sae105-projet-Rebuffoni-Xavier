@@ -1,13 +1,3 @@
-.header_flag {
-    width: 58px;
-    height: 37px;
-}
-
-.header_logo {
-    width: 141;
-    height: 39;
-}
-
 .menu {
     position:fixed;
     top: 0;
@@ -25,15 +15,4 @@
     .noscroll,
     .noscroll body {
     overflow: hidden;
-}
-
-.header {
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
 }

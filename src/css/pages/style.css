@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,300&family=Crimson+Text:wght@700&family=Glory:wght@400;600&family=Jacques+Francois&display=swap');
+
+@import url(/src/css/utils/variable.css);
+
+@import url(/src/css/layout/footer.css);
+
+@import url(/src/css/layout/header.css);
+
+@import url(/src/css/layout/menu.css);

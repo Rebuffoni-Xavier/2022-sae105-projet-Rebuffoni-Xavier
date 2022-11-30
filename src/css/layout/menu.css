@@ -16,3 +16,9 @@
     .noscroll body {
     overflow: hidden;
 }
+
+.menu_text {
+    font-family: var();
+    font-size: var(--titres-menu);
+    color: dodgerblue;
+}

@@ -8,17 +8,25 @@
     display: grid;
     place-content: left;
     }
-    .header__menuBtn {
-    position: relative;
-    z-index: 10;
+
+    .menu__btn {
+        position: relative;
+        z-index: 10;
+        appearance: none;
+        border: none;
+        background: none;
+        padding: none;
+        cursor: pointer;
+        margin-top: 10px;
     }
+
     .noscroll,
     .noscroll body {
     overflow: hidden;
 }
 
-.menu_text {
-    font-family: var();
+.menu__text {
     font-size: var(--titres-menu);
-    color: dodgerblue;
+    color: white;
+    list-style: none;
 }

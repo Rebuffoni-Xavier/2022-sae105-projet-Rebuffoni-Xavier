@@ -19,27 +19,27 @@ x-data="{"
 
     <body>
         <header class="header">
-            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="header_langue">
-                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header_langue_flag">
+            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="header__langue">
+                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header__langue--logo">
             </a>
 
-            <a href="/fr/index.html" class="header_start">
-                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header_start_logo">
+            <a href="/fr/index.html" class="header__start">
+                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header__start--logo">
             </a>
 
             <button aria-controls="mainNav" 
             @click="menuIsOpen = ! menuIsOpen" 
-            class="header__menuBtn"
+            class="menu__btn"
             >
-                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger" class="header_menuBtn_logo">
+                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger" class="menu__btn--logo">
             </button>
 
             <nav id="mainNav" 
             x-show="menuIsOpen" 
             x-transition.duration.800ms
-            class="menu"
+            class="header__menu menu"
             >
-                <ul class="menu_text">
+                <ul class="menu__text">
                     <li>
                         <section x-data="{isOpen:false}">
                             <a @click="isOpen = !isOpen">
@@ -81,7 +81,7 @@ x-data="{"
 
         <main class="home">
 
-            <h1 class="titre_site">Earth Topic</h1>
+            <h1 class="titre__site">Earth Topic</h1>
 
             <img src="/public/img/Bouton.webp" alt="bouton Terre" width="216">
 

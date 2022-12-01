@@ -1,4 +1,34 @@
 .footer {
-    background-color: rgb(255, 255, 255);
+    font-family: 'Glory', sans-serif;
+    background-color: black;
+}
 
+.footer__title {  
+    font-size: var(--titre-pied-de-page);
+    font-weight: bold;
+    color: white;
+}
+
+.footer__text {
+    font-size: var(--textes-pied-de-page);
+    color: white;
+}
+
+.footer__text--link {
+    color: var(--couleur-liens);
+}
+
+.footer__link1 {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__link2 {
+    width: 24px;
+    height: 24px;
+}
+
+.footer__logo {
+    width: 24px;
+    height: 24px;
 }

@@ -21,3 +21,9 @@
 --légende-guide-de--style: 14px;
 --liens-articles: 15px;
 }
+
+/* Gradient */
+.lineaire-simple {
+    background: linear-gradient(black, #83B57F);
+}
+

@@ -26,7 +26,11 @@
 }
 
 .menu__text {
+    font-family: 'Cinzel Decorative', cursive;
     font-size: var(--titres-menu);
     color: white;
     list-style: none;
+}
+
+.menu__text--logo {
 }

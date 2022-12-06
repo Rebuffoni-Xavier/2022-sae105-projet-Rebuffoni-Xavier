@@ -12,12 +12,12 @@
     background-color: var(--couleur-dominante-2)
 }
 
-.button__fleche {
+.article__button--fleche {
     width: 45.94px;
     height: 44.92px;
 }
 
-.button {
+.article__button {
     font-family: 'Crimson Text', serif;
     font-size: var(--button);
     color: var(--menu);
@@ -38,7 +38,7 @@ p {
     color: black;
 }
 
-p,h2 {
-    background-color: var();
+.article__intro {
+    background-color: #ECC5AF;
 }
 

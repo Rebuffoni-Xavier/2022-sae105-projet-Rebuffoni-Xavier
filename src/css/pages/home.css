@@ -12,6 +12,12 @@
     background-color: var(--couleur-dominante-2)
 }
 
+.article {
+    border-top: solid;
+    color: white ;
+    margin-top: 20px;
+}
+
 .article__button--fleche {
     width: 45.94px;
     height: 44.92px;
@@ -28,17 +34,34 @@
     border-radius: 5px;
     border: solid;
     border-color: linear-gradient(black, #83B57F);
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 115px;
     padding-left: 15px;
     display:flex;
     align-items: center;
+}
+
+.intro__text {
+    color: white;
 }
 
 p {
     color: black;
 }
 
+img {
+    border-radius: 5px;
+}
+
 .article__intro {
     background-color: #ECC5AF;
+    width: 233px;
+    height: 310px;
+    border-radius: 5px;
+    margin-top: -30px;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
 

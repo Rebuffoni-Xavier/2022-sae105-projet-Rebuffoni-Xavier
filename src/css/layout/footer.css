@@ -1,6 +1,9 @@
 .footer {
     font-family: 'Glory', sans-serif;
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .footer__title {  

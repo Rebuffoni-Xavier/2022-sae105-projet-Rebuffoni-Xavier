@@ -1,0 +1,44 @@
+.home {
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(black, #83B57F);
+    margin-top: 90px;
+}
+
+.home__titre--site {
+    text-align: center;
+    font-family: 'Jacques Francois', serif;
+    font-size: var(--titre-site);
+    background-color: var(--couleur-dominante-2)
+}
+
+.button__fleche {
+    width: 45.94px;
+    height: 44.92px;
+}
+
+.button {
+    font-family: 'Crimson Text', serif;
+    font-size: var(--button);
+    color: var(--menu);
+    text-decoration: none;
+    background-color: var(--couleur-dominante-2);
+    width: 160px;
+    height: 56px;
+    border-radius: 5px;
+    border: solid;
+    border-color: linear-gradient(black, #83B57F);
+    margin-left: 20px;
+    padding-left: 15px;
+    display:flex;
+    align-items: center;
+}
+
+p {
+    color: black;
+}
+
+p,h2 {
+    background-color: var();
+}
+

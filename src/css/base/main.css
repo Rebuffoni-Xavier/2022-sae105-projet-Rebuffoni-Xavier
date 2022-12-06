@@ -1,16 +1,13 @@
-.home {
-    margin: 0px;
-    padding: 0px;
-    background: linear-gradient(black, #83B57F);
-    margin-top: 90px;
+p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--texte-articles);
+    color: var(--couleur-dominante-2);
 }
 
-.titre__site {
-    display: flex;
-    font-family: 'Jacques Francois', serif;
-    font-size: var(--titre-site);
-    background-color: white;
-    width: 17rem;
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--titre-articles);
+    color: var(--couleur-dominante-2);
 }
 
 font-family: 'Cinzel Decorative', cursive;

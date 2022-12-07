@@ -8,5 +8,81 @@
 h1,
 h2 {
     color: var(--couleur-dominante-2);
+    margin-left: 5px;
 }
 
+.interstellar__intro {
+    background-color: #ECC5AF;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.article__button--fleche {
+    width: 45.94px;
+    height: 44.92px;
+}
+
+.article__button {
+    font-family: 'Crimson Text', serif;
+    font-size: var(--button);
+    color: var(--menu);
+    text-decoration: none;
+    background-color: var(--couleur-dominante-2);
+    width: 300px;
+    height: 56px;
+    border-radius: 5px;
+    border: solid;
+    border-color: var(--couleur-tonique);
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-left: 15px;
+    display:flex;
+    align-items: center;
+}
+
+.article1 {
+    border: solid;
+    border-radius: 5px;
+    color: var(--couleur-dominante-2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.article2 {
+    border: solid;
+    border-radius: 5px;
+    color: var(--couleur-dominante-2);
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.article1__text,
+.article2__text {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.legend {
+    color: #FAFF00;
+    text-align: center;
+}
+
+.article1__img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.illustration {
+    display: block;
+    width: 90%;
+    margin: auto;
+}

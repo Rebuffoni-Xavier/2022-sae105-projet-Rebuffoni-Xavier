@@ -12,8 +12,22 @@ h2 {
     font-weight: bold;
 }
 
+.legend {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--légende-article);
+    font-style: italic;
+}
+
+.definition {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--liens-articles);
+    color: var(--couleur-liens);
+}
+
 .youtube {
-    width: 100%;
+    display: block;
+    width: 95%;
+    margin: auto;
 }
 
 font-family: 'Cinzel Decorative', cursive;

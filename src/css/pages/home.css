@@ -38,7 +38,7 @@
     height: 56px;
     border-radius: 5px;
     border: solid;
-    border-color: linear-gradient(black, #83B57F);
+    border-color: var(--couleur-tonique);
     margin-top: 20px;
     margin-left: 115px;
     padding-left: 15px;

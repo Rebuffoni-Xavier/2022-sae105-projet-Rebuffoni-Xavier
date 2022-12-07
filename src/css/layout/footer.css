@@ -1,8 +1,9 @@
 .footer {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Glory', sans-serif;
     background-color: black;
     z-index: 2;
-    
     justify-content: space-between;
     align-items:flex-start;
 }
@@ -49,4 +50,10 @@
     border: solid;
     border-color: #0066FF;
     width: 100%;
+}
+
+img {
+    display: block;
+    width: 90%;
+    margin: auto;
 }

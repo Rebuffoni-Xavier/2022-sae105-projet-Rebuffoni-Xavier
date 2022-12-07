@@ -4,14 +4,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items:flex-start;
 }
 
+.nav__title,
+.rs__title,
 .footer__title {  
     font-size: var(--titre-pied-de-page);
     font-weight: bold;
     color: white;
 }
 
+.footer__legend,
 .footer__text {
     font-size: var(--textes-pied-de-page);
     color: white;
@@ -21,12 +25,12 @@
     color: var(--couleur-liens);
 }
 
-.footer__link1 {
+.link1 {
     width: 20px;
     height: 20px;
 }
 
-.footer__link2 {
+.link2 {
     width: 24px;
     height: 24px;
 }
@@ -34,4 +38,11 @@
 .footer__logo {
     width: 24px;
     height: 24px;
+}
+
+.rs,
+.nav,
+.footer_div {
+    border: solid;
+    border-color: #0066FF;
 }

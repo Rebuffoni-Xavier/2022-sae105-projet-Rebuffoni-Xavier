@@ -1,9 +1,9 @@
 .footer {
     font-family: 'Glory', sans-serif;
     background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    z-index: 2;
+    
+    justify-content: space-between;
     align-items:flex-start;
 }
 
@@ -13,12 +13,14 @@
     font-size: var(--titre-pied-de-page);
     font-weight: bold;
     color: white;
+    text-align: center;
 }
 
 .footer__legend,
 .footer__text {
     font-size: var(--textes-pied-de-page);
     color: white;
+    text-align: center;
 }
 
 .footer__text--link {
@@ -43,6 +45,8 @@
 .rs,
 .nav,
 .footer_div {
+    margin: 0px;
     border: solid;
     border-color: #0066FF;
+    width: 100%;
 }

@@ -4,11 +4,16 @@ p {
     color: var(--couleur-dominante-2);
 }
 
+h1,
 h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: var(--titre-articles);
     color: var(--couleur-dominante-2);
     font-weight: bold;
+}
+
+.youtube {
+    width: 100%;
 }
 
 font-family: 'Cinzel Decorative', cursive;

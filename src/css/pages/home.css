@@ -14,6 +14,7 @@
     border: solid;
     border-color: var(--couleur-tonique);
     border-width: 10px;
+    color: black;
 }
 
 .article {

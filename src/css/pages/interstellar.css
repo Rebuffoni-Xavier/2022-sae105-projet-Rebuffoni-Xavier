@@ -1,0 +1,12 @@
+.interstellar {
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(black, #3C523A);
+    margin-top: 90px;
+}
+
+h1,
+h2 {
+    color: var(--couleur-dominante-2);
+}
+

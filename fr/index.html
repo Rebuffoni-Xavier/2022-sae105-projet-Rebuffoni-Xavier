@@ -41,20 +41,20 @@ x-data="{"
             x-transition.duration.800ms
             class="header__menu menu"
             >
-                <ul class="menu__text">
+                <ul class="menu__item item">
                     <li>
                         <section x-data="{isOpen:false}">
                             <a @click="isOpen = !isOpen">
-                                Désolation <img src="/public/icones/plus.svg" alt="Icone plus" class="menu__text--logo">
+                                Désolation <img src="/public/icones/plus.svg" alt="Icone plus">
                             </a>
                             <p>
-                                <a href="/fr/craintes.html" x-show="isOpen">Craintes</a>
+                                <a href="/fr/craintes.html" x-show="isOpen" class="item__text">Craintes</a>
                             </p>
                             <p>
-                                <a href="/fr/interstellar.html" x-show="isOpen">Interstellar</a>
+                                <a href="/fr/interstellar.html" x-show="isOpen" class="item__text">Interstellar</a>
                             </p>
                             <p>
-                                <a href="/fr/islande.html" x-show="isOpen">Islande</a>
+                                <a href="/fr/islande.html" x-show="isOpen" class="item__text">Islande</a>
                             </p>
                         </section>
                     </li>
@@ -64,18 +64,18 @@ x-data="{"
                                 Espoir <img src="/public/icones/plus.svg" alt="Icone plus">
                             </a>
                             <p>
-                                <a href="/fr/espoir.html" x-show="isOpen">Espoir</a>
+                                <a href="/fr/espoir.html" x-show="isOpen" class="item__text">Espoir</a>
                             </p>
                             <p>
-                                <a href="/fr/livre.html" x-show="isOpen">Là où chantent les écrevisses</a>
+                                <a href="/fr/livre.html" x-show="isOpen" class="item__text">Là où chantent les écrevisses</a>
                             </p>
                             <p>
-                                <a href="/fr/carolina.html" x-show="isOpen">Carolina</a>
+                                <a href="/fr/carolina.html" x-show="isOpen" class="item__text">Carolina</a>
                             </p>
                         </section>
                     </li>
-                    <li><a href="/fr/comment_agir.html">Comment agir ?</a></li>
-                    <li><a href="/fr/glossaire.html">Glossaire</a></li>
+                    <li><a href="/fr/comment_agir.html" class="item">Comment agir ?</a></li>
+                    <li><a href="/fr/glossaire.html" class="item">Glossaire</a></li>
                 </ul>
             </nav>
 

@@ -25,9 +25,19 @@
     overflow: hidden;
 }
 
-.menu__text {
+.item {
     font-family: 'Cinzel Decorative', cursive;
     font-size: var(--titres-menu);
     color: white;
     list-style: none;
+    text-decoration: none;
+    font-style: none;
+}
+
+.item__text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--titres-menu);
+    color: white;
+    text-decoration: none;
+    font-style: none;
 }

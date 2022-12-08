@@ -22,6 +22,12 @@ h2 {
     align-items: flex-end;
 }
 
+.intro__text {
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .article__button--fleche {
     width: 45.94px;
     height: 44.92px;

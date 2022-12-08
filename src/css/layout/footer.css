@@ -46,8 +46,21 @@
 .rs,
 .nav,
 .footer_div {
-    margin: 0px;
     border: solid;
     border-color: #0066FF;
-    width: 100%;
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.footer__logo {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.link1,
+.link2 {
+    display: block;
+    margin: auto;
 }

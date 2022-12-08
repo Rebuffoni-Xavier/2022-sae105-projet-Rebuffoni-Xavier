@@ -1,7 +1,7 @@
 .interstellar {
     margin: 0px;
     padding: 0px;
-    background: linear-gradient(black, #3C523A);
+    background: linear-gradient(#172017, #293928);
     margin-top: 90px;
 }
 
@@ -81,12 +81,7 @@ h2 {
     text-align: center;
 }
 
-.article1__img {
-    display: block;
-    width: 90%;
-    margin: auto;
-}
-
+.article1__img,
 .illustration {
     display: block;
     width: 90%;

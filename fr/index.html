@@ -84,8 +84,6 @@ x-data="{"
 
         <main class="home">
 
-            
-
             <div class="home__carrousel carrousel" x-data="{hrefCourant: '#ecran-1',}">
                 <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
                 <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
@@ -115,6 +113,7 @@ x-data="{"
                             LIRE ARTICLE <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
                         </a>
                     </div>
+
                     <div id="ecran-4" class="carrousel_ecran4">
                         <img src="/public/img/Interstellar.webp" alt="affiche film Interstellar" width="233">
                         <div class="article__intro">
@@ -125,6 +124,7 @@ x-data="{"
                             LIRE ARTICLE <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
                         </a>
                     </div>
+
                     <div id="ecran-5" class="carrousel_ecran5">
                         <img src="/public/img/Glacier_Islande.webp" alt="image glacier en Islande" width="252">
                         <div class="article__intro">
@@ -135,6 +135,7 @@ x-data="{"
                             LIRE ARTICLE <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
                         </a>
                     </div>
+
                     <div id="ecran-6" class="carrousel_ecran6">
                         <img src="/public/img/logo.webp" alt="image d'arbre" width="266">
                         <div class="article__intro">
@@ -145,6 +146,7 @@ x-data="{"
                             LIRE ARTICLE <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
                         </a>
                     </div>
+
                     <div id="ecran-7" class="carrousel_ecran7">
                         <img src="/public/img/Là_où_chantent_les_écrevisses_1.webp" alt="couverture du livre Là où chantent les écrevisses" width="209">
                         <div class="article__intro">
@@ -155,6 +157,7 @@ x-data="{"
                             LIRE ARTICLE <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
                         </a>
                     </div>
+
                     <div id="ecran-8" class="carrousel_ecran8">
                         <img src="/public/img/Carolina_Taylor_Swift.webp" alt="affiche musique Carolina Taylor Swift" width="322">
                         <div class="article__intro">
@@ -165,6 +168,7 @@ x-data="{"
                             LIRE ARTICLE <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
                         </a>
                     </div>
+                    
                     <div id="ecran-9" class="carrousel_ecran9">
                         <img src="/public/img/Comment_agir.webp" alt="illustration d'une manifestation" width="329">
                         <div class="article__intro">

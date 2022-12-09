@@ -1,7 +1,8 @@
 .home {
     margin: 0px;
     padding: 0px;
-    background: linear-gradient(to right,black, #83B57F);
+    background-image: url(/public/img/image_foret_detruite.webp);
+    background-size: 100%;
     margin-top: 90px;
 }
 

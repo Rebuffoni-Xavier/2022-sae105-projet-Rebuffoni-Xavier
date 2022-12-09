@@ -17,6 +17,8 @@
     scroll-snap-align: start;
     background-image: url(/public/img/image.webp);
     background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .carrousel_ecran2 {

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr"
-x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
-x-data="{"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}" 
 >
     <head>
         <meta charset="utf-8">
@@ -17,7 +16,6 @@ x-data="{"
         <link rel="stylesheet" href="/src/css/base/home_carrousel.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
-        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
     <body>
@@ -85,7 +83,14 @@ x-data="{"
         <main class="home">
 
             <div class="home__carrousel carrousel" x-data="{hrefCourant: '#ecran-1',}">
-                <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
+                <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
+                  @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
+                &lt; 
+                </button>
+                <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" 
+                  @click="console.log('apres');$refs.parent.scrollLeft += $refs.parent.clientWidth">
+                &gt;
+                </button>
                 <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
                 hrefCourant = '#'+
                                 [...$refs.parent.children]

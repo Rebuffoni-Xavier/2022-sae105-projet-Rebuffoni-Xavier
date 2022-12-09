@@ -9,6 +9,7 @@
     
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    overflow-x: hidden;
 }
 
 .carrousel_ecran1 {

@@ -5,7 +5,7 @@
     margin-top: 90px;
 }
 
-.home__titre--site {
+.home__titre--site1 {
     text-align: center;
     font-family: 'Jacques Francois', serif;
     font-size: var(--titre-site);
@@ -14,8 +14,25 @@
     border: solid;
     border-color: var(--couleur-tonique);
     border-width: 10px;
+    border-radius: 30px;
     color: black;
+    margin-bottom: 0px;
 }
+
+.home__titre--site2 {
+    text-align: center;
+    font-family: 'Jacques Francois', serif;
+    font-size: var(--titre-site);
+    font-weight: bold;
+    background-color: var(--couleur-dominante-2);
+    border: solid;
+    border-color: var(--couleur-tonique);
+    border-width: 10px;
+    border-radius: 30px;
+    color: black;
+    margin-top: 0px;
+}
+
 .article__button--fleche {
     width: 45.94px;
     height: 44.92px;
@@ -70,4 +87,10 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+}
+
+.home__logo {
+    display: block;
+    width: 40%;
+    margin: auto;
 }

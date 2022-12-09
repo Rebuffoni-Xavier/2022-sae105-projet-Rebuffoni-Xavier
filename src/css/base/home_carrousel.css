@@ -16,8 +16,7 @@
     flex: none;
     scroll-snap-align: start;
     background-image: url(/public/img/image.webp);
-    background-size: 230%;
-    background-repeat:;
+    background-size: 100%;
 }
 
 .carrousel_ecran2 {

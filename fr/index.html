@@ -84,13 +84,7 @@ x-data="{"
 
         <main class="home">
 
-            <h1 class="home__titre--site">Earth Topic</h1>
-
-            <img src="/public/icones/shiny_glossy_earth_logo.png" alt="bouton Terre" width="216" class="home__logo">
-
-            <section class="home__intro intro">
-                <p class="intro__text">La Terre…. Cette planète recouverte d’eau et abritant la vie. Cette bonne vieille planète qui nous permet de vivre et de subvenir à tous nos besoins. Cette planète qui malgré tous ses sacrifices continuent d’être traitée injustement. Cette planète que nous ferions mieux de protéger plutôt que de détruire si nous voulons continuer à avoir des lendemains heureux. Alors voilà Earthopic c’est à la fois une utopie et une dystopie. Une utopie si nous agissons maintenant en respectant la richesse de cette terre ; une dystopie si au contraire nous continuons de la traiter injustement en détruisant tout sur notre passage. Ce site aura pour but de vous présenter ces deux possibilités mais c’est à vous d’agir pour décider du meilleur futur pour l’humanité.</p>
-            </section>
+            
 
             <div class="home__carrousel carrousel" x-data="{hrefCourant: '#ecran-1',}">
                 <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
@@ -101,6 +95,17 @@ x-data="{"
                                 .id
                                                     ">
                     <div id="ecran-1" class="carrousel_ecran1">
+                        <h1 class="home__titre--site">Earth</h1>
+                        <img src="/public/icones/shiny_glossy_earth_logo.png" alt="bouton Terre" width="216" class="home__logo">
+                        <h1 class="home__titre--site">Topic</h1>
+                    </div>
+                    
+                    <div id="ecran-2" class="carrousel_ecran2">
+                        <img src="/public/img/image_3.webp" alt="Image de la Terre depuis l'espace" class="carrousel_ecran2--img">
+                        <p class="intro__text">La Terre…. Cette planète recouverte d’eau et abritant la vie. Cette bonne vieille planète qui nous permet de vivre et de subvenir à tous nos besoins. Cette planète qui malgré tous ses sacrifices continuent d’être traitée injustement. Cette planète que nous ferions mieux de protéger plutôt que de détruire si nous voulons continuer à avoir des lendemains heureux. Alors voilà Earthopic c’est à la fois une utopie et une dystopie. Une utopie si nous agissons maintenant en respectant la richesse de cette terre ; une dystopie si au contraire nous continuons de la traiter injustement en détruisant tout sur notre passage. Ce site aura pour but de vous présenter ces deux possibilités mais c’est à vous d’agir pour décider du meilleur futur pour l’humanité.</p> 
+                    </div>
+                    
+                    <div id="ecran-3" class="carrousel_ecran3">
                         <img src="/public/img/Terre_en_feu.webp" alt="image de la terre en train de bruler" width="256">
                         <div class="article__intro">
                             <h2>UN MONDE EN PÉRIL ?</h2>
@@ -110,7 +115,7 @@ x-data="{"
                             LIRE ARTICLE <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
                         </a>
                     </div>
-                    <div id="ecran-2" class="carrousel_ecran2">
+                    <div id="ecran-4" class="carrousel_ecran4">
                         <img src="/public/img/Interstellar.webp" alt="affiche film Interstellar" width="233">
                         <div class="article__intro">
                             <h2>INTERSTELLAR</h2>
@@ -120,7 +125,7 @@ x-data="{"
                             LIRE ARTICLE <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
                         </a>
                     </div>
-                    <div id="ecran-3" class="carrousel_ecran3">
+                    <div id="ecran-5" class="carrousel_ecran5">
                         <img src="/public/img/Glacier_Islande.webp" alt="image glacier en Islande" width="252">
                         <div class="article__intro">
                             <h2>ISLANDE</h2>
@@ -130,7 +135,7 @@ x-data="{"
                             LIRE ARTICLE <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
                         </a>
                     </div>
-                    <div id="ecran-4" class="carrousel_ecran4">
+                    <div id="ecran-6" class="carrousel_ecran6">
                         <img src="/public/img/logo.webp" alt="image d'arbre" width="266">
                         <div class="article__intro">
                             <h2>ESPOIR</h2>
@@ -140,7 +145,7 @@ x-data="{"
                             LIRE ARTICLE <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
                         </a>
                     </div>
-                    <div id="ecran-5" class="carrousel_ecran5">
+                    <div id="ecran-7" class="carrousel_ecran7">
                         <img src="/public/img/Là_où_chantent_les_écrevisses_1.webp" alt="couverture du livre Là où chantent les écrevisses" width="209">
                         <div class="article__intro">
                             <h2>"LÀ OÙ CHANTENT LES ÉCREVISSES"</h2>
@@ -150,7 +155,7 @@ x-data="{"
                             LIRE ARTICLE <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
                         </a>
                     </div>
-                    <div id="ecran-6" class="carrousel_ecran6">
+                    <div id="ecran-8" class="carrousel_ecran8">
                         <img src="/public/img/Carolina_Taylor_Swift.webp" alt="affiche musique Carolina Taylor Swift" width="322">
                         <div class="article__intro">
                             <h2>"CAROLINA"</h2>
@@ -160,7 +165,7 @@ x-data="{"
                             LIRE ARTICLE <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
                         </a>
                     </div>
-                    <div id="ecran-7" class="carrousel_ecran7">
+                    <div id="ecran-9" class="carrousel_ecran9">
                         <img src="/public/img/Comment_agir.webp" alt="illustration d'une manifestation" width="329">
                         <div class="article__intro">
                             <h2>COMMENT AGIR ?</h2>

@@ -15,45 +15,61 @@
     width: 100%;
     flex: none;
     scroll-snap-align: start;
-    background: linear-gradient(to right, black, #151D15);
+    background-image: url(/public/img/image.webp);
+    background-size: 230%;
+    background-repeat:;
 }
 
 .carrousel_ecran2 {
     width: 100%;
     flex: none;
     scroll-snap-align: start;
-    background: linear-gradient(to right, #151D15, #2C3D2B);
+    background-color: black;
 }
 
 .carrousel_ecran3 {
     width: 100%;
     flex: none;
     scroll-snap-align: start;
-    background: linear-gradient(to right, #2C3D2B, #425B40);
+    background: linear-gradient(to right, black, #151D15);
 }
 
 .carrousel_ecran4 {
     width: 100%;
     flex: none;
     scroll-snap-align: start;
-    background: linear-gradient(to right, #425B40, #587955);
+    background: linear-gradient(to right, #151D15, #2C3D2B);
 }
 
 .carrousel_ecran5 {
     width: 100%;
     flex: none;
     scroll-snap-align: start;
-    background: linear-gradient(to right, #587955, #6F986B);
+    background: linear-gradient(to right, #2C3D2B, #425B40);
 }
 
 .carrousel_ecran6 {
     width: 100%;
     flex: none;
     scroll-snap-align: start;
-    background: linear-gradient(to right, #6F986B, #85B781);
+    background: linear-gradient(to right, #425B40, #587955);
 }
 
 .carrousel_ecran7 {
+    width: 100%;
+    flex: none;
+    scroll-snap-align: start;
+    background: linear-gradient(to right, #587955, #6F986B);
+}
+
+.carrousel_ecran8 {
+    width: 100%;
+    flex: none;
+    scroll-snap-align: start;
+    background: linear-gradient(to right, #6F986B, #85B781);
+}
+
+.carrousel_ecran9 {
     width: 100%;
     flex: none;
     scroll-snap-align: start;

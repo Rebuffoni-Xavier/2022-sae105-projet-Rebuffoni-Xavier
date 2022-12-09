@@ -41,6 +41,11 @@
 
 .intro__text {
     color: white;
+    text-align: center;
+}
+
+.carrousel_ecran2--img {
+    width: 100%;
 }
 
 p {

@@ -3,9 +3,9 @@
     padding: 0px;
     font-family: 'Glory', sans-serif;
     background-color: black;
-    z-index: 2;
-    justify-content: space-between;
-    align-items:flex-start;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .nav__title,
@@ -28,12 +28,14 @@
     color: var(--couleur-liens);
 }
 
-.link1 {
+.li1__img,
+.li2__img {
     width: 20px;
     height: 20px;
 }
 
-.link2 {
+.li3__img,
+.li4__img {
     width: 24px;
     height: 24px;
 }
@@ -49,8 +51,9 @@
     border: solid;
     border-color: #0066FF;
     display: block;
-    width: 90%;
+    width: 95%;
     margin: auto;
+    margin-top: 1rem;
 }
 
 .footer__logo {
@@ -59,8 +62,10 @@
     margin-bottom: 5px;
 }
 
-.link1,
-.link2 {
-    display: block;
-    margin: auto;
+.link {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
 }

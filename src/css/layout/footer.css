@@ -10,7 +10,9 @@
 
 .nav__title,
 .rs__title,
-.footer__title {  
+.footer__title { 
+    margin: 0.5rem;
+    padding: 0px;
     font-size: var(--titre-pied-de-page);
     font-weight: bold;
     color: white;

@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 p {
     font-family: 'Cormorant Garamond', serif;
     font-size: var(--texte-articles);
@@ -28,11 +33,6 @@ h2 {
     display: block;
     width: 95%;
     margin: auto;
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
 
 font-family: 'Cinzel Decorative', cursive;

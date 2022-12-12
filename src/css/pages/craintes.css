@@ -58,6 +58,7 @@ h2 {
 }
 
 .legend {
+    margin: 1rem;
     color: #FAFF00;
     text-align: center;
 }

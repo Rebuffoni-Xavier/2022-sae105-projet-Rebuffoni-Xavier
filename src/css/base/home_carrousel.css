@@ -15,10 +15,8 @@
     width: 100%;
     flex: none;
     scroll-snap-align: start;
-    background-image: url(/public/img/image.webp);
+    background: url(/public/img/image.webp) no-repeat top , url(/public/img/image_foret_detruite.webp) no-repeat bottom;
     background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .carrousel_ecran2 {

@@ -1,7 +1,7 @@
 .home {
     margin: 0px;
     padding: 0px;
-    background-image: url(/public/img/image_foret_detruite.webp);
+    background-color: white;
     background-size: 100%;
     margin-top: 90px;
 }

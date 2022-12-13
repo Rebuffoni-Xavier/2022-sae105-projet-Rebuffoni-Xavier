@@ -3,3 +3,10 @@
     width: clamp(300px, 95%, 600px);
     margin: auto;
 }
+
+.img__principale {
+    display: block;
+    width: clamp(331px, 80%, 500px);
+    margin: auto;
+    border-radius: 2px;
+}

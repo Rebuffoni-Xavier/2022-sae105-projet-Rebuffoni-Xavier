@@ -28,6 +28,7 @@
 .carrousel {
     box-sizing: border-box;
     margin: 0;
+    margin-top: 20px;
     position: relative;
     }
       

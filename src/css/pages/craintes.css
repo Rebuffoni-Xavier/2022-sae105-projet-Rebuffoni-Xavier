@@ -30,7 +30,7 @@ h2 {
 
 .craintes__imgprincipale {
     display: block;
-    width: 100%;
+    width: clamp(500px, 100%, 800px);
     margin: auto;
 }
 
@@ -63,10 +63,14 @@ h2 {
     text-align: center;
 }
 
-.illustration__img,
-.article2__img {
+.illustration__img {
     display: block;
-    width: 80%;
+    width: clamp(199px, 90%, 400px);
     margin: auto;
 }
 
+.article2__img {
+    display: block;
+    width: clamp(307px, 90%, 500px);
+    margin: auto;
+}

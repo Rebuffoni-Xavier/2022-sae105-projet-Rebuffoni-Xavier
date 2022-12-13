@@ -1,0 +1,5 @@
+.youtube {
+    display: block;
+    width: clamp(300px, 95%, 600px);
+    margin: auto;
+}

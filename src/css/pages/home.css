@@ -91,6 +91,6 @@ img {
 
 .home__logo {
     display: block;
-    width: 40%;
+    width: clamp(100px, 40%, 400px);
     margin: auto;
 }

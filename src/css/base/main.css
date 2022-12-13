@@ -29,12 +29,6 @@ h2 {
     color: var(--couleur-liens);
 }
 
-.youtube {
-    display: block;
-    width: 95%;
-    margin: auto;
-}
-
 font-family: 'Cinzel Decorative', cursive;
 font-family: 'Cormorant Garamond', serif;
 font-family: 'Crimson Text', serif;

@@ -24,7 +24,7 @@ h2 {
 
 .article__img {
     display: block;
-    width: clamp(336px, 90%, 500px);
+    width: clamp(200px, 90%, 500px);
     margin: auto;
 }
 
@@ -33,4 +33,5 @@ h2 {
     width: clamp(347px, 90%, 600px);
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
 }

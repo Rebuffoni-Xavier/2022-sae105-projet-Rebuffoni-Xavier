@@ -26,3 +26,7 @@ h2 {
     width: clamp(175px, 90%, 400px);
     margin: auto;
 }
+
+.article__button {
+    width: 330px;
+}

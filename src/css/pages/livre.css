@@ -19,6 +19,7 @@ h3 {
 .article__button {
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 330px;
 }
 
 .legend {
@@ -35,7 +36,7 @@ h3 {
 
 .illustration {
     display: block;
-    width: clamp(347px, 90%, 600px);
+    width: clamp(100px, 90%, 600px);
     margin: auto;
     margin-top: 20px;
 }

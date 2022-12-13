@@ -15,11 +15,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-.craintes__imgprincipale {
-    display: block;
-    width: clamp(500px, 100%, 800px);
-    margin: auto;
-}
+
 
 .article__li--text {
     font-family: 'Cormorant Garamond', serif;
@@ -41,6 +37,6 @@ h2 {
 
 .article__img {
     display: block;
-    width: clamp(307px, 90%, 500px);
+    width: clamp(200px, 90%, 500px);
     margin: auto;
 }

@@ -67,16 +67,18 @@ h2 {
 .article__button {
     font-family: 'Crimson Text', serif;
     font-size: var(--button);
+    text-transform: uppercase;
     color: var(--menu);
     text-decoration: none;
     background-color: var(--couleur-dominante-2);
+    width: 350px;
     height: 56px;
     border-radius: 5px;
     border: solid;
     border-color: var(--couleur-tonique);
     margin-top: 20px;
     margin-left: 10px;
-    padding-left: 15px;
+    padding: 10px;
     display:flex;
     align-items: center;
 }

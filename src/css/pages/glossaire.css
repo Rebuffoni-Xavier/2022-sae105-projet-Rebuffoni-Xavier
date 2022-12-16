@@ -1,0 +1,36 @@
+.glossaire {
+    margin: 0px;
+    padding: 0px;
+    background: white;
+}
+
+h1 {
+    color: black;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+/*.definitions {
+    margin-left: 10px;
+    margin-right: 10px;
+}*/
+
+.definitions__title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--texte-articles);
+    font-weight: bold;
+    margin-top: 20px;
+    border-top: solid;
+    border-color: var(--couleur-espoir);
+}
+
+.definitions__texte {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--texte-articles);
+    color: black;
+}
+
+.youtube {
+    margin-top: 10px;
+    margin-left: 0px;
+}

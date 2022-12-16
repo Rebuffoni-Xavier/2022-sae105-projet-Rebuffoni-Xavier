@@ -1,0 +1,60 @@
+.musique {
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(#6E986B, #83B57F);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--couleur-dominante-2);
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.legend {
+    margin: 1rem;
+    color: black;
+    text-align: center;
+}
+
+.legend__paroles {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--légende-article);
+    font-style: italic;
+    margin: 1rem;
+    color: black;
+    margin-left: 0px;
+    width: clamp(100px, 30%, 400px);
+}
+
+.article__img {
+    display: block;
+    width: clamp(100px, 30%, 400px);
+    margin-left: 0px;
+}
+
+.illustration {
+    display: block;
+    width: clamp(100px, 30%, 600px);
+    margin: auto;
+    margin-top: 20px;
+}
+
+.definition {
+    color: var(--menu);
+}
+
+.audio__music {
+    margin-top: 5px;
+}
+
+.audio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

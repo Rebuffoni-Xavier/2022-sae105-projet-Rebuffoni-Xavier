@@ -88,19 +88,19 @@ x-data="{"
                 </header>
                 <form action="#" class="contact__formulaire formulaire">
                     <div class="formulaire__champs">
-                        <label for="Nom" class="formulaire__champs--title">Nom*</label>
+                        <label for="Nom" class="formulaire__champs--title">Nom <aside class="legend__obligatoire">*</aside></label>
                         <input type="text" name="Nom" id="Nom" class="formulaire__champs--texte">
                     </div>
                     <div class="formulaire__champs">
-                        <label for="Prénom" class="formulaire__champs--title">Prénom*</label>
+                        <label for="Prénom" class="formulaire__champs--title">Prénom <aside class="legend__obligatoire">*</aside></label>
                         <input type="text" name="Prénom" id="Prénom" class="formulaire__champs--texte">
                     </div>
                     <div class="formulaire__champs">
-                        <label for="Mail" class="formulaire__champs--title">Mail*</label>
+                        <label for="Mail" class="formulaire__champs--title">Mail <aside class="legend__obligatoire">*</aside></label>
                         <input type="text" name="Mail" id="Mail" class="formulaire__champs--texte">
                     </div>
                     <div class="formulaire__champs">
-                        <label for="Téléphone" class="formulaire__champs--title">Numéro*</label>
+                        <label for="Téléphone" class="formulaire__champs--title">Numéro <aside class="legend__obligatoire">*</aside></label>
                         <input type="text" name="Téléphone" id="Téléphone" class="formulaire__champs--texte">
                     </div>
                     <div class="formulaire__champs">
@@ -109,7 +109,10 @@ x-data="{"
                     </div>
                     <button type="submit" class="formulaire__button">Envoyer</button>
                 </form>
-                <p class="legend">(*) Champs obligatoires</p>
+                <div class="legend">
+                    <aside class="legend__obligatoire">(*)</aside>
+                    <p>Champs obligatoires</p>
+                </div>
             </section>
         </main>
 

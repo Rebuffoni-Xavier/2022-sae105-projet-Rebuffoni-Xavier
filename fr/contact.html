@@ -80,36 +80,36 @@ x-data="{"
 
         </header>
 
-        <main>
+        <main class="contact">
             <section>
                 <header>
                   <h2>FORMULAIRE DE CONTACT</h2>
                   <p>N'hésitez pas à rester en contact avec moi via ce formulaire.</p>
                 </header>
-                <form action="#">
-                    <div>
-                        <label for="Nom">Nom*</label>
-                        <input type="text" name="Nom" id="Nom">
+                <form action="#" class="contact__formulaire formulaire">
+                    <div class="formulaire__champs">
+                        <label for="Nom" class="formulaire__champs--title">Nom*</label>
+                        <input type="text" name="Nom" id="Nom" class="formulaire__champs--texte">
                     </div>
-                    <div>
-                        <label for="Prénom">Prénom*</label>
-                        <input type="text" name="Prénom" id="Prénom">
+                    <div class="formulaire__champs">
+                        <label for="Prénom" class="formulaire__champs--title">Prénom*</label>
+                        <input type="text" name="Prénom" id="Prénom" class="formulaire__champs--texte">
                     </div>
-                    <div>
-                        <label for="Mail">Mail*</label>
-                        <input type="text" name="Mail" id="Mail">
+                    <div class="formulaire__champs">
+                        <label for="Mail" class="formulaire__champs--title">Mail*</label>
+                        <input type="text" name="Mail" id="Mail" class="formulaire__champs--texte">
                     </div>
-                    <div>
-                        <label for="Téléphone">Numéro*</label>
-                        <input type="text" name="Téléphone" id="Téléphone">
+                    <div class="formulaire__champs">
+                        <label for="Téléphone" class="formulaire__champs--title">Numéro*</label>
+                        <input type="text" name="Téléphone" id="Téléphone" class="formulaire__champs--texte">
                     </div>
-                    <div>
-                        <label for="Message">Message</label>
-                        <textarea id="Message" name="message" rows="5"></textarea>
+                    <div class="formulaire__champs">
+                        <label for="Message" class="formulaire__champs--title">Message</label>
+                        <textarea id="Message" name="message" rows="5" class="formulaire__champs--texte"></textarea>
                     </div>
-                    <button type="submit">Envoyer</button>
+                    <button type="submit" class="formulaire__button">Envoyer</button>
                 </form>
-                <p>(*) Champs obligatoires</p>
+                <p class="legend">(*) Champs obligatoires</p>
             </section>
         </main>
 

@@ -1,0 +1,53 @@
+.filmoreal {
+    margin: 0px;
+    padding: 0px;
+    background: black;
+}
+
+h1 {
+    color: var(--couleur-dominante-2);
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+h2,
+h3 {
+    color: black;
+    margin-left: 5px;
+    margin-top: 0px;
+    text-align: center;
+    width: 227px;
+}
+
+.article {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 289px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.article__img {
+    margin-top: 1rem;
+}
+
+.article__text {
+    color: #0500FF;
+    text-align: center;
+    width: 227px;
+}
+
+.article__button {
+    width: 170px;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.definition {
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 227px;
+}

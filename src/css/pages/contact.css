@@ -59,6 +59,7 @@ p {
     color: var(--textes-menu);
     text-decoration: none;
     background-color: var(--couleur-espoir);
+    cursor: pointer;
 }
 
 .legend__obligatoire {

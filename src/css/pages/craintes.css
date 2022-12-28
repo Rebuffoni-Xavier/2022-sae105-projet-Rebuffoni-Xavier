@@ -17,10 +17,11 @@ h2 {
 
 
 
-.article__li--text {
+.article__li {
     font-family: 'Cormorant Garamond', serif;
     font-size: var(--texte-articles);
-    margin-right: 5px;
+    color: var(--couleur-dominante-2);
+    line-height: 1.7rem;
 }
 
 .legend {

@@ -65,6 +65,7 @@ p {
 .legend__obligatoire {
     color: red;
     font-weight: bold;
+    margin-left: 10px;
 }
 
 .legend {

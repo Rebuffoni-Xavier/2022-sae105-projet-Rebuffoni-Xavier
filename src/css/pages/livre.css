@@ -47,12 +47,13 @@ h3 {
 }
 
 .resume {
-    width: 80%;
+    width: clamp(331px, 80%, 500px);
     margin: auto;
     margin-top: 10px;
 }
 
 .resume__title {
+    height: 50px;
     font-family: 'Cormorant Garamond', serif;
     font-size: var(--titre-articles);
     color: var(--couleur-dominante-2);
@@ -63,6 +64,7 @@ h3 {
     border-color: black;
     border-radius: 5px;
     text-align: center;
+    line-height: 45px;
 }
 
 .resume__text {

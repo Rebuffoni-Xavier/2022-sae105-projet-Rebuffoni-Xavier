@@ -14,6 +14,7 @@ x-data="{"
         <link rel="icon" href="/public/icones/shiny_glossy_earth_logo.png" />
         <link rel="stylesheet" href="/src/css/pages/style.css">
         <link rel="stylesheet" href="/src/css/pages/livre.css">
+        <link rel="stylesheet" href="/src/css/base/carrousel_livre.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
     </head>
@@ -102,10 +103,32 @@ x-data="{"
                         <p class="article__text">Il y a une œuvre qui peut justement prouver qu’un monde en cohésion avec la nature est réalisable. Cette œuvre est un livre écrit par Delia Owens, publié en 2018 et se nommant « Là où chantent les écrevisses » <a href="/fr/glossaire.html" class="definition">(plus d'information sur le livre)</a>. Le titre peut en effet paraître étrange, pourtant ce roman nous donne un très bon aperçu de la cohésion possible avec la nature. Ce livre est d’autant plus intéressant qu’il reste très réaliste. On y suit les aventures d’une fille se prénommant Catherine Danielle Clarke ou juste Kya pour ses proches. Elle vit depuis toujours dans les marais de <a href="/fr/glossaire.html" class="definition">Caroline du Nord</a>. Elle a été élevée dans une famille fracturée où le père est violent avec tout le monde. Chaque membre de la famille a fini par partir pour fuir les coups du père jusqu’au jour où lui aussi est parti. C’est dans ce monde que Kya a dû vivre seule depuis son plus jeune âge. Pour y parvenir, elle a dû apprendre à se débrouiller seule dans le marais sans technologie et en n’ayant que quelques personnes sur qui compter. Durant toute sa vie elle a continué à apprendre de la nature en l’observant et en la dessinant. Ce marais était donc son environnement et c’était le seul endroit où elle se sentait chez elle. Tout le long de l’histoire elle va d’ailleurs faire des références à la nature dans la description de sa vie comme si elle vivait selon les codes du marais. La fin nous met aussi face à une réflexion sur les propres codes de la société.</p>
                     </div>
 
-                    <img src="/public/img/Frame_nature_1.webp" alt="Arbre" width="223">
-                    <img src="/public/img/Frame_nature_2.webp" alt="Coucher de soleil" width="223">
-                    <img src="/public/img/Frame_nature_3.webp" alt="Cabane nature" width="223">
-                    <p>Images provenant de l’adaptation cinématographique du film</p>
+                    <div class="craintes__carrousel carrousel" x-data="{hrefCourant: '#ecran-1',}">
+                        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
+                        <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+                        hrefCourant = '#'+
+                                        [...$refs.parent.children]
+                                        .find(e=>e.getBoundingClientRect().x>=0)
+                                        .id
+                                                            ">
+                            <div id="ecran-1" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/Frame_nature_1.webp" alt="Arbre" class="carrousel__ecran--img">
+                                    <figcaption class="legend">Images provenant de l'adaptation cinématographique du film</figcaption>
+                                </figure>
+                            </div>
+                            <div id="ecran-2" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/Frame_nature_2.webp" alt="Coucher de soleil" class="carrousel__ecran--img">
+                                </figure>
+                            </div>
+                            <div id="ecran-3" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/Frame_nature_3.webp" alt="Cabane nature" class="carrousel__ecran--img">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="livre__article article">
                         <h2>Une cohésion possible</h2>

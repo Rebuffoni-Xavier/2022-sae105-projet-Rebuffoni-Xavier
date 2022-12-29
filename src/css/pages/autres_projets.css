@@ -1,0 +1,20 @@
+.otherproject {
+    margin: 0px;
+    padding: 0px;
+    background: var(--comment-agir-);
+}
+
+h1,
+h2 {
+    color: var(--couleur-dominante-2);
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+.otherproject__li {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--texte-articles);
+    color: var(--couleur-dominante-2);
+    line-height: 5rem;
+    margin: 0px;
+}

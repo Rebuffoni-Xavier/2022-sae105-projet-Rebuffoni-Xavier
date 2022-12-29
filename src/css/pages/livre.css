@@ -45,3 +45,31 @@ h3 {
     margin-left: 10px;
     padding-bottom: 20px;
 }
+
+.resume {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.resume__title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--titre-articles);
+    color: var(--couleur-dominante-2);
+    font-weight: bold;
+    cursor: pointer;
+    background: var(--comment-agir-);
+    border: solid;
+    border-color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.resume__text {
+    background: white;
+    color: var(--couleur-espoir);
+    border: solid;
+    border-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}

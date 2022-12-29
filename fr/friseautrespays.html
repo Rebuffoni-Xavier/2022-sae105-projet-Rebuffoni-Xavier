@@ -89,25 +89,27 @@ x-data="{"
             <section>
                 <h2>LIEUX SIMILAIRES</h2>
 
-                <img src="/public/img/RMM_1388012_Meradhoo_Island 1.webp" alt="miniature Îles Maldives"
-                    @click="imageIsOpen1 = '/public/img/RMM_1388012_Meradhoo_Island%201.webp'"
-                    class="miniature__1"
-                >
+                <div>
+                    <img src="/public/img/RMM_1388012_Meradhoo_Island 1.webp" alt="miniature Îles Maldives"
+                        @click="imageIsOpen1 = '/public/img/RMM_1388012_Meradhoo_Island%201.webp'"
+                        class="miniature"
+                    >
 
-                <img src="/public/img/Plastique.webp" alt="miniature Continent de plastique"
-                    @click="imageIsOpen2 = '/public/img/Plastique.webp'"
-                    class="miniature__2"
-                >
+                    <img src="/public/img/Plastique.webp" alt="miniature Continent de plastique"
+                        @click="imageIsOpen2 = '/public/img/Plastique.webp'"
+                        class="miniature"
+                    >
 
-                <img src="/public/img/Fonte_banquise.webp" alt="miniature Carte résumé de la fonte des banquises"
-                    @click="imageIsOpen3 = '/public/img/Fonte_banquise.webp'"
-                    class="miniature__3"
-                >
+                    <img src="/public/img/Inondation-Pakistan-FR_v2.webp" alt="miniature Carte résumé des inondations au Pakistan"
+                        @click="imageIsOpen4 = '/public/img/Inondation-Pakistan-FR_v2.webp'"
+                        class="miniature"
+                    >
 
-                <img src="/public/img/Inondation-Pakistan-FR_v2.webp" alt="miniature Carte résumé des inondations au Pakistan"
-                    @click="imageIsOpen4 = '/public/img/Inondation-Pakistan-FR_v2.webp'"
-                    class="miniature__4"
-                >
+                    <img src="/public/img/Fonte_banquise.webp" alt="miniature Carte résumé de la fonte des banquises"
+                        @click="imageIsOpen3 = '/public/img/Fonte_banquise.webp'"
+                        class="miniature"
+                    >
+                </div>
                 
                 <div class="frise__overlay overlay"
                     x-show="imageIsOpen1"

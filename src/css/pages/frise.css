@@ -12,6 +12,10 @@ h3 {
     margin-top: 0px;
 }
 
+.img__principale {
+    
+}
+
 .overlay {
     position: fixed;
     width: 100%;
@@ -27,47 +31,32 @@ h3 {
 }
 
 .overlay::after {
-    /* Add content : "X" */
     content: "X";
-    /* White text color */
     color: white;
-    /* Black background color */
-    background-color: black;
-    /* Font family "sans-serif" */
+    background-color: var(--menu);
     font-family: sans-serif;
-    /* Centered text */
     text-align: center;
-    /* Line height ( idem height ) */
     line-height: 2rem;
-    /* Display as a block */
     display: block;
-    /* Position absolute */
     position: absolute;
-    /* 1rem from the top */
-    top: 1rem;
-    /* 1rem from the right */
+    top: 6.5rem;
     right: 1rem;
-    /* 2rem width */
     width: 2rem;
-    /* 2rem height */
     height: 2rem;
-    /* White border of 2px */
     border: solid;
-    border-color: black;
+    border-color: white;
     border-width: 2px;
-    /* Rounded border */
     border-radius: 50%;
 }
 
 .overlay>figure {
-    /* No margin */
-    margin: 0px;
-    /* 1rem padding */
+    width: 80%;
+    margin: auto;
     padding: 1rem;
-    /* White border of 2px */
     border: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: var(--couleur-tonique);
+    border-radius: 5px;
     background-color: white;
 }
 
@@ -76,6 +65,7 @@ h3 {
     font-size: var(--texte-articles);
     color: black;
     line-height: 1.7rem;
+    text-align: center;
 }
 
 .overlay>figure>img {
@@ -83,6 +73,26 @@ h3 {
     height: auto;
 }
 
-.miniature {
+.miniature__1 {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.miniature__2 {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.miniature__3 {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.miniature__4 {
+    width: 100px;
+    height: auto;
     cursor: pointer;
 }

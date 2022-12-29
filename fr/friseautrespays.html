@@ -81,56 +81,74 @@ x-data="{"
         </header>
 
         <main class="frise" x-data="{
-            imageIsOpen: null,
+            imageIsOpen1: null,
+            imageIsOpen2: null,
+            imageIsOpen3: null,
+            imageIsOpen4: null,
         }">
             <section>
                 <h2>LIEUX SIMILAIRES</h2>
 
-                <img src="https://picsum.photos/id/236/40/60" alt="miniature chiot"
-                    @click="imageIsOpen = 'https://picsum.photos/id/236/400/300'"
-                    class="miniature"
+                <img src="/public/img/RMM_1388012_Meradhoo_Island 1.webp" alt="miniature Îles Maldives"
+                    @click="imageIsOpen1 = '/public/img/RMM_1388012_Meradhoo_Island%201.webp'"
+                    class="miniature__1"
+                >
+
+                <img src="/public/img/Plastique.webp" alt="miniature Continent de plastique"
+                    @click="imageIsOpen2 = '/public/img/Plastique.webp'"
+                    class="miniature__2"
+                >
+
+                <img src="/public/img/Fonte_banquise.webp" alt="miniature Carte résumé de la fonte des banquises"
+                    @click="imageIsOpen3 = '/public/img/Fonte_banquise.webp'"
+                    class="miniature__3"
+                >
+
+                <img src="/public/img/Inondation-Pakistan-FR_v2.webp" alt="miniature Carte résumé des inondations au Pakistan"
+                    @click="imageIsOpen4 = '/public/img/Inondation-Pakistan-FR_v2.webp'"
+                    class="miniature__4"
                 >
                 
                 <div class="frise__overlay overlay"
-                    x-show="imageIsOpen"
-                    @click="imageIsOpen=null"
-                    @keyup.escape.window="imageIsOpen = null"
+                    x-show="imageIsOpen1"
+                    @click="imageIsOpen1=null"
+                    @keyup.escape.window="imageIsOpen1 = null"
                 >
                     <figure>
-                        <img src="/public/img/RMM_1388012_Meradhoo_Island 1.webp" alt="Îles Maldives">
+                        <img :src="imageIsOpen1" alt="Îles Maldives">
                         <figcaption>Les îles des Maldives sont particulièrement touchées par la montée des eaux car elles sont aux même niveaux que la mer.</figcaption>
                     </figure>
                 </div>
 
                 <div class="frise__overlay overlay"
-                    x-show="imageIsOpen"
-                    @click="imageIsOpen=null"
-                    @keyup.escape.window="imageIsOpen = null"
+                    x-show="imageIsOpen2"
+                    @click="imageIsOpen2=null"
+                    @keyup.escape.window="imageIsOpen2 = null"
                 >
                     <figure>
-                        <img src="/public/img/Plastique.webp" alt="Continent de plastique">
+                        <img :src="imageIsOpen2" alt="Continent de plastique">
                         <figcaption>Ce que l'on appelle le “7ème continent” est une grande étendue de plastique dans l'océan. Ceci menace toutes les espèces marines présentes dans le coin.</figcaption>
                     </figure>
                 </div>
 
                 <div class="frise__overlay overlay"
-                    x-show="imageIsOpen"
-                    @click="imageIsOpen=null"
-                    @keyup.escape.window="imageIsOpen = null"
+                    x-show="imageIsOpen3"
+                    @click="imageIsOpen3=null"
+                    @keyup.escape.window="imageIsOpen3 = null"
                 >
                     <figure>
-                        <img src="/public/img/Fonte_banquise.webp" alt="Carte résumé de la fonte des banquises">
+                        <img :src="imageIsOpen3" alt="Carte résumé de la fonte des banquises">
                         <figcaption>La fonte de la banquise au pôle Nord est une des conséquences du réchauffement climatique.</figcaption>
                     </figure>
                 </div>
 
                 <div class="frise__overlay overlay"
-                    x-show="imageIsOpen"
-                    @click="imageIsOpen=null"
-                    @keyup.escape.window="imageIsOpen = null"
+                    x-show="imageIsOpen4"
+                    @click="imageIsOpen4=null"
+                    @keyup.escape.window="imageIsOpen4 = null"
                 >
                     <figure>
-                        <img src="/public/img/Inondation-Pakistan-FR_v2.webp" alt="Carte résumé des inondations au Pakistan">
+                        <img :src="imageIsOpen4" alt="Carte résumé des inondations au Pakistan">
                         <figcaption>Le 31 août 2022, le Pakistan a fait face à des inondations encore jamais vu auparavant. Celles-ci ont causé de nombreux dégats autant matériel qu'humain.</figcaption>
                     </figure>
                 </div>

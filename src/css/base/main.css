@@ -112,6 +112,11 @@ h2 {
     padding-bottom: 20px;
 }
 
+.important {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 font-family: 'Cinzel Decorative', cursive;
 font-family: 'Cormorant Garamond', serif;
 font-family: 'Crimson Text', serif;

@@ -26,6 +26,11 @@
     text-align: center;
 }
 
+.footer__text::first-letter,
+.footer__legend::first-letter {
+    font-size: var(--textes-pied-de-page);
+}
+
 .footer__text--link {
     color: var(--couleur-liens);
 }

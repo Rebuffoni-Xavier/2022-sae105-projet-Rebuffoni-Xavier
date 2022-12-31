@@ -7,6 +7,7 @@
 --couleur-espoir: rgba(30, 49, 86, 1);
 --comment-agir-: rgba(86, 30, 64, 1);
 --couleur-liens: rgba(94, 201, 117, 1);
+--citation-color: wheat;
 
 /* Text-size styles */
 --titre-site: 96px;
@@ -20,4 +21,5 @@
 --légende-article: 12px;
 --légende-guide-de--style: 14px;
 --liens-articles: 15px;
+--citation: 20px;
 }

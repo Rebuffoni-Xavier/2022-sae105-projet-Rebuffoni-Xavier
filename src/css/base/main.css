@@ -10,6 +10,10 @@ p {
     line-height: 1.7rem;
 }
 
+p::first-letter {
+    font-size: 40px;
+}
+
 h1,
 h2 {
     font-family: 'Cormorant Garamond', serif;
@@ -60,6 +64,10 @@ h2 {
     margin-right: 5px;
 }
 
+.intro__text::first-letter {
+    font-size: var(--texte-articles);
+}
+
 .article__button--fleche {
     width: 45.94px;
     height: 44.92px;
@@ -82,6 +90,26 @@ h2 {
     padding: 10px;
     display:flex;
     align-items: center;
+}
+
+.citation {
+    text-align: center;
+    line-height: 0px;
+}
+
+.citation__text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--citation);
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.citation__legend {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--légende-article);
+    color: var(--citation-color);
+    padding-bottom: 20px;
 }
 
 font-family: 'Cinzel Decorative', cursive;

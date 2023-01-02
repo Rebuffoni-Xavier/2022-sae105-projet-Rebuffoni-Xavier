@@ -44,38 +44,42 @@ x-data="{"
                 <ul class="menu__item item">
                     <li>
                         <section x-data="{isOpen:false}">
-                            <a @click="isOpen = !isOpen" class="item">
-                                Désolation <img src="/public/icones/plus_white.svg" alt="Icone plus">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Désolation <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
                             </a>
-                            <p>
-                                <a href="/fr/craintes.html" x-show="isOpen" class="item__text">Craintes</a>
-                            </p>
-                            <p>
-                                <a href="/fr/interstellar.html" x-show="isOpen" class="item__text">Interstellar</a>
-                            </p>
-                            <p>
-                                <a href="/fr/islande.html" x-show="isOpen" class="item__text">Islande</a>
-                            </p>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/craintes.html"  class="sousmenu__text">Craintes</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/interstellar.html" class="sousmenu__text">Interstellar</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/islande.html" class="sousmenu__text">Islande</a>
+                                </li>
+                            </ul>
                         </section>
                     </li>
                     <li>
                         <section x-data="{isOpen:false}">
-                            <a @click="isOpen = !isOpen" class="item">
-                                Espoir <img src="/public/icones/plus_white.svg" alt="Icone plus">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Espoir <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
                             </a>
-                            <p>
-                                <a href="/fr/espoir.html" x-show="isOpen" class="item__text">Espoir</a>
-                            </p>
-                            <p>
-                                <a href="/fr/livre.html" x-show="isOpen" class="item__text">Là où chantent les écrevisses</a>
-                            </p>
-                            <p>
-                                <a href="/fr/carolina.html" x-show="isOpen" class="item__text">Carolina</a>
-                            </p>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/espoir.html" class="sousmenu__text">Espoir</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/livre.html" class="sousmenu__text">Là où chantent les écrevisses</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/carolina.html" class="sousmenu__text">Carolina</a>
+                                </li>
+                            </ul>
                         </section>
                     </li>
-                    <li><a href="/fr/comment_agir.html" class="item">Comment agir ?</a></li>
-                    <li><a href="/fr/glossaire.html" class="item">Glossaire</a></li>
+                    <li><a href="/fr/comment_agir.html" class="item__title">Comment agir ?</a></li>
+                    <li><a href="/fr/glossaire.html" class="item__title">Glossaire</a></li>
                 </ul>
             </nav>
 

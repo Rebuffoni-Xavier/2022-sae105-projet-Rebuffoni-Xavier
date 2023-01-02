@@ -20,6 +20,9 @@ h2 {
     font-size: var(--texte-articles);
     color: var(--couleur-dominante-2);
     line-height: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .legend {
@@ -38,4 +41,8 @@ h2 {
     display: block;
     width: clamp(200px, 90%, 500px);
     margin: auto;
+}
+
+.citation__text {
+    padding: 0px;
 }

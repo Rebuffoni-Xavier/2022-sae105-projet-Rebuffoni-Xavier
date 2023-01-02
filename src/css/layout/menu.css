@@ -26,18 +26,40 @@
 }
 
 .item {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.item__title {
     font-family: 'Cinzel Decorative', cursive;
     font-size: var(--titres-menu);
     color: white;
-    list-style: none;
     text-decoration: none;
     font-style: none;
+    padding-bottom: 22px;
+    border-bottom: solid;
 }
 
-.item__text {
+.sousmenu {
+    list-style: circle;
+    color: white;
+    font-size: var(--titres-menu);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.sousmenu__text {
     font-family: 'Cormorant Garamond', serif;
     font-size: var(--titres-menu);
     color: white;
     text-decoration: none;
     font-style: none;
+}
+
+.plus {
+    cursor: pointer;
 }

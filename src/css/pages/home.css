@@ -78,6 +78,10 @@ p {
     margin-bottom: 5px;
 }
 
+p::first-letter {
+    font-size: var(--texte-articles);
+}
+
 img {
     border-radius: 5px;
 }

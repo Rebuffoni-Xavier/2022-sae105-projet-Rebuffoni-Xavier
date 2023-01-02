@@ -112,7 +112,7 @@ h2 {
     padding-bottom: 20px;
 }
 
-.important {
+strong {
     font-size: 18px;
     font-weight: bold;
 }

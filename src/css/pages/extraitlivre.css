@@ -1,0 +1,83 @@
+.extraitlivre {
+    margin: 0px;
+    padding: 0px;
+    background: #6E986B;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--couleur-dominante-2);
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+.article {
+    border: none;
+}
+
+.resume {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    background: var(--menu);
+}
+
+.resume__title {
+    height: 60px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--texte-articles);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    background: white;
+    border: solid;
+    border-color: black;
+    text-align: center;
+    line-height: 30px;
+}
+
+.resume__text {
+    background: white;
+    color: var(--couleur-espoir);
+    border: solid;
+    border-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.citation {
+    margin-top: -16px;
+    border: solid;
+    border-top: none;
+    border-color: black;
+}
+
+.citation__extrait--img {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.citation__extrait--text1 {
+    text-align: start;
+    margin-left: -20px;
+    padding-top: 20px;
+}
+
+.citation__extrait--text {
+    text-align: start;
+    margin-left: -20px;
+}
+
+.citation__extrait--text::first-letter {
+    font-size: var(--texte-articles);
+}
+
+.citation__legend {
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: var(--texte-articles);
+    font-style: italic;
+}

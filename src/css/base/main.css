@@ -119,6 +119,7 @@ h2 {
     font-size: var(--légende-article);
     color: var(--citation-color);
     padding-bottom: 20px;
+    line-height: 1rem;
 }
 
 strong {

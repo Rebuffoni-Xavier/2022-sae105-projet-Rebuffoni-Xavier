@@ -25,3 +25,7 @@ h1 {
     width: clamp(267px, 90%, 400px);
     margin: auto;
 }
+
+.citation__text {
+    padding: 0px;
+}

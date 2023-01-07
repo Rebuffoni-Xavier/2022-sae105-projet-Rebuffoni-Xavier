@@ -1,3 +1,7 @@
+.contact {
+    background-color: #EAEAEA;
+}
+
 h2 {
     color: black;
     margin-left: 5px;
@@ -8,6 +12,10 @@ p {
     color: black;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+p::first-letter {
+    font-size: var(--texte-articles);
 }
 
 .formulaire__champs {
@@ -65,7 +73,7 @@ p {
 .legend__obligatoire {
     color: red;
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 1px;
 }
 
 .legend {

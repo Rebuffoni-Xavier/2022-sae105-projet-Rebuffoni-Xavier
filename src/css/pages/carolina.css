@@ -22,25 +22,9 @@ h3 {
     text-align: center;
 }
 
-.legend__paroles {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: var(--légende-article);
-    font-style: italic;
-    margin: 1rem;
-    color: black;
-    margin-left: 0px;
-    width: clamp(100px, 30%, 400px);
-}
-
-.article__img {
+.illustration__Swift {
     display: block;
-    width: clamp(100px, 30%, 400px);
-    margin-left: 0px;
-}
-
-.illustration {
-    display: block;
-    width: clamp(100px, 30%, 600px);
+    width: clamp(100px, 60%, 600px);
     margin: auto;
     margin-top: 20px;
 }
@@ -57,4 +41,46 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.article__block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    gap: 0.5rem;
+}
+
+.image__img {
+    width: 170px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.legend__paroles {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--légende-article);
+    font-style: italic;
+    color: black;
+}
+
+.article__block--text {
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.citation__text {
+    padding: 0px;
 }

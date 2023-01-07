@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+x-data="{"
+>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projet individuel MMI Montbéliard">
+
+        <title>Earth Topic</title>
+
+        <link rel="icon" href="/public/icones/shiny_glossy_earth_logo.png" />
+        <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/extraitlivre.css">
+
+        <script defer src="https://unpkg.com/alpinejs"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="header__langue">
+                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header__langue--logo">
+            </a>
+
+            <a href="/fr/index.html" class="header__start">
+                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header__start--logo">
+            </a>
+
+            <button aria-controls="mainNav" 
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__btn"
+            >
+                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger" class="menu__btn--logo">
+            </button>
+
+            <nav id="mainNav" 
+            x-show="menuIsOpen" 
+            x-transition.duration.800ms
+            class="header__menu menu"
+            >
+                <ul class="menu__item item">
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Désolation <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/craintes.html"  class="sousmenu__text">Craintes</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/interstellar.html" class="sousmenu__text">Interstellar</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/islande.html" class="sousmenu__text">Islande</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Espoir <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/espoir.html" class="sousmenu__text">Espoir</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/livre.html" class="sousmenu__text">Là où chantent les écrevisses</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/carolina.html" class="sousmenu__text">Carolina</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li><a href="/fr/comment_agir.html" class="item__title">Comment agir ?</a></li>
+                    <li><a href="/fr/glossaire.html" class="item__title">Glossaire</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="extraitlivre">
+           <section>
+                <article>
+                    <h1>EXTRAIT LIVRE</h1>
+                    
+                    <div class="extraitlivre__article article">
+                        <p class="article__text">J'ai choisi cet extrait car il résume parfaitement la vie de Kya (le personnage principal du livre) qui a vécu en adéquation avec la nature. On se rend compte grâce à ce passage qu'une vie en cohésion avec la nature est effectivement possible et bénéfique.</p>
+
+                        <details class="livre__resume resume">
+                            <summary class="resume__title">Attention ce passage provient de la fin du livre, il dévoile donc des éléments clés de l'intrigue.</summary>
+                            
+                            <div class="article__citation citation">
+                                <blockquote class="citation__extrait">
+                                    <img src="/public/img/Kya-Tate.webp" alt="Coucher de soleil" class="citation__extrait--img">
+
+                                    <p class="citation__extrait--text1">« Tate et Kya espéraient fonder une famille, mais ils ne parvinrent jamais à avoir d’enfants. Cette déception les souda davantage encore, et ils ne se séparaient jamais plus de quelques heures par jour.</p>
+                                    
+                                    <p class="citation__extrait--text">Parfois, Kya marchait seule sur la plage et, tandis que le coucher du soleil embrassait le ciel, elle sentait les vagues cogner dans son cœur. Elle se penchait, touchait le sable, puis tendait les bras vers les nuages. Elle ressentait les liens. Non pas ceux dont Ma et Mabel avaient parlé – Kya n’eut jamais de bande d’amis proches, ni les liens que Jodie avait décrits, parce qu’elle n’avait jamais connu sa propre famille. Les années de solitude qu’elle avait traversées avaient altéré son comportement au point qu’elle finisse par être différente des autres, mais ce n’était pas sa faute si elle avait été abandonnée de tous. Presque tout ce qu’elle savait, elle l’avait appris de la nature. Du monde sauvage. La nature l’avait nourrie, instruite et protégée quand personne n’était là pour le faire. Si sa façon de se comporter différemment des autres avait eu des conséquences, celles-ci aussi faisaient partie du noyau dur de la vie.</p>
+                                        
+                                    <p class="citation__extrait--text">Les sentiments que lui portait Tate finirent par la convaincre que l’amour humain est plus fort que les étranges compétitions auxquelles se livrent les créatures du marais pour s’accoupler, mais l’existence lui apprit aussi que les gènes anciens de la survie persistent sous des formes indésirables dans les spirales du code génétique des hommes.</p>
+                                        
+                                    <p class="citation__extrait--text">Pour Kya, il était suffisant de faire partie de cette suite naturelle d’évènements, rythmée par la même régularité que les marées. Elle se sentait attachée à sa planète d’une façon que peu de gens connaissent. Elle était enracinée dans la terre. Elle lui devait la vie. »</p> 
+                                </blockquote>
+                                <figcaption class="citation__legend">Extrait du livre <cite><a href="/fr/glossaire.html" class="definition">Là où chantent les écrevisses</a></cite>, écrit par Delia Owens et publié en 2018</figcaption>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+           </section> 
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer__rs rs">
+                <h5 class="rs__title">Me suivre</h5>
+                <ul class="rs__link link">
+                    <li class="link__li">
+                        <a href="https://www.instagram.com/cine_feel_m/" class="link__li--li1 li1">
+                            <img src="/public/icones/instagram_1.webp" alt="logo Instagram" class="li1__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li2 li2">
+                            <img src="/public/icones/facebook_1.webp" alt="logo Facebook" class="li2__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="https://www.youtube.com/channel/UCeTZe0cGb4BJasd4RHtFR9w" class="link__li--li3 li3">
+                            <img src="/public/icones/youtube_(1)_1.webp" alt="logo Youtube" class="li3__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li4 li4">
+                            <img src="/public/icones/mail_1.webp" alt="logo mail" class="li4__img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/a_propos.html">
+                    <h5 class="nav__title">A propos</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/glossaire.html">
+                    <h5 class="nav__title">Glossaire</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/autres_projets.html">
+                    <h5 class="nav__title">Autres Projets</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/contact.html">
+                    <h5 class="nav__title">Contact</h5>
+                </a>
+            </nav>
+        
+            <div class="footer_div">
+                <h5 class="footer__title">Mention Légale</h5>
+                <p class="footer__legend">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__text--link">MMi de Montbéliard</a>.</p>
+                <img src="/public/icones/MMI_1.webp" alt="logo du MMI" class="footer__logo">
+            </div>
+
+            <div class="footer_div">
+                <p class="footer__text">Xavier REBUFFONI MMI 1 C1</p>
+            </div>
+        
+        </footer>
+    </body>
+
+</html>

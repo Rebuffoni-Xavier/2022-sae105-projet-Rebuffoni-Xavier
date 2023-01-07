@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+x-data="{"
+>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projet individuel MMI Montbéliard">
+
+        <title>Earth Topic</title>
+
+        <link rel="icon" href="/public/icones/shiny_glossy_earth_logo.png" />
+        <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/glossaire.css">
+
+        <script defer src="https://unpkg.com/alpinejs"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="header__langue">
+                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header__langue--logo">
+            </a>
+
+            <a href="/fr/index.html" class="header__start">
+                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header__start--logo">
+            </a>
+
+            <button aria-controls="mainNav" 
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__btn"
+            >
+                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger" class="menu__btn--logo">
+            </button>
+
+            <nav id="mainNav" 
+            x-show="menuIsOpen" 
+            x-transition.duration.800ms
+            class="header__menu menu"
+            >
+                <ul class="menu__item item">
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Désolation <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/craintes.html"  class="sousmenu__text">Craintes</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/interstellar.html" class="sousmenu__text">Interstellar</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/islande.html" class="sousmenu__text">Islande</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Espoir <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/espoir.html" class="sousmenu__text">Espoir</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/livre.html" class="sousmenu__text">Là où chantent les écrevisses</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/carolina.html" class="sousmenu__text">Carolina</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li><a href="/fr/comment_agir.html" class="item__title">Comment agir ?</a></li>
+                    <li><a href="/fr/glossaire.html" class="item__title">Glossaire</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="glossaire">
+           <section>
+                <article>
+                    <h1>GLOSSAIRE</h1>
+
+                    <dl class="glossaire__definitions definitions">
+                        <dt class="definitions__title">Caroline du Nord</dt>
+                        <dd class="definitions__texte"><a href="https://fr.wikipedia.org/wiki/Caroline_du_Nord" class="definition">Plus d'informations</a></dd>
+
+                        <dt class="definitions__title">Dystopie</dt>
+                        <dd class="definitions__texte">Représentation d’un monde futur néfaste (contraire d’utopie).</dd>
+
+                        <dt class="definitions__title">GIEC</dt>
+                        <dd class="definitions__texte"><a href="https://www.youtube.com/watch?v=i_JMYVgY_tA" class="definition">Court reportage</a> de la chaîne Youtube BRUT.</dd>
+
+                        <dt class="definitions__title">Interstellar</dt>
+                        <dd class="definitions__texte"><a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=114782.html" class="definition">Plus d'informations sur le film</a></dd>
+
+                        <dt class="definitions__title">Islande</dt>
+                        <dd class="definitions__texte"><a href="https://fr.wikipedia.org/wiki/Islande" class="definition">Plus d'informations</a></dd>
+
+                        <dt class="definitions__title">"Là où chantent les écrevisses"</dt>
+                        <dd class="definitions__texte"><a href="https://fr.wikipedia.org/wiki/L%C3%A0_o%C3%B9_chantent_les_%C3%A9crevisses_(livre)" class="definition">Plus d'informations</a></dd>
+
+                        <dt class="definitions__title">NASA</dt>
+                        <dd class="definitions__texte">National Aeronautics and Space Administration  agence fédérale en charge de la plus grosse partie du programme spatial des Etats Unis <a href="https://fr.wikipedia.org/wiki/National_Aeronautics_and_Space_Administration" class="definition">(plus d'informations)</a>.</dd>
+
+                        <dt class="definitions__title">ONU</dt>
+                        <dd class="definitions__texte">Organisation des Nations Unis <a href="https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies" class="definition">(plus d'information)</a> et <a href="https://www.un.org/fr/" class="definition"> site officiel de l'ONU</a>.</dd>
+
+                        <dt class="definitions__title">OTAN</dt>
+                        <dd class="definitions__texte">Organisation du Traité de l’Atlantique Nord <a href="https://www.larousse.fr/encyclopedie/divers/OTAN/136491" class="definition">(plus d'information)</a> et <a href="https://www.nato.int/nato-welcome/index_fr.html" class="definition">site officiel de l'OTAN</a>.</dd>
+
+                        <dt class="definitions__title">Réchauffement climatique</dt>
+                        <dd class="definitions__texte">
+                            <a href="https://www.ecologie.gouv.fr/politiques/comprendre-changement-climatique" class="definition">Site du gouvernement</a>
+                            ou 
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/8nzRXxPnlPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube"></iframe>
+                        </dd>
+
+                        <dt class="definitions__title">Taylor Swift</dt>
+                        <dd class="definitions__texte"><a href="https://fr.wikipedia.org/wiki/Taylor_Swift" class="definition">Plus d'informations</a> et <a href="https://www.taylorswift.com/" class="definition">site officiel</a>.</dd>
+
+                        <dt class="definitions__title">Utopie</dt>
+                        <dd class="definitions__texte">Représentation d’un monde futur idéal en contradiction avec le monde actuelle (contraire de dystopie).</dd>
+                    </dl>
+                </article>
+           </section> 
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer__rs rs">
+                <h5 class="rs__title">Me suivre</h5>
+                <ul class="rs__link link">
+                    <li class="link__li">
+                        <a href="https://www.instagram.com/cine_feel_m/" class="link__li--li1 li1">
+                            <img src="/public/icones/instagram_1.webp" alt="logo Instagram" class="li1__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li2 li2">
+                            <img src="/public/icones/facebook_1.webp" alt="logo Facebook" class="li2__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="https://www.youtube.com/channel/UCeTZe0cGb4BJasd4RHtFR9w" class="link__li--li3 li3">
+                            <img src="/public/icones/youtube_(1)_1.webp" alt="logo Youtube" class="li3__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li4 li4">
+                            <img src="/public/icones/mail_1.webp" alt="logo mail" class="li4__img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/a_propos.html">
+                    <h5 class="nav__title">A propos</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/glossaire.html">
+                    <h5 class="nav__title">Glossaire</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/autres_projets.html">
+                    <h5 class="nav__title">Autres Projets</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/contact.html">
+                    <h5 class="nav__title">Contact</h5>
+                </a>
+            </nav>
+        
+            <div class="footer_div">
+                <h5 class="footer__title">Mention Légale</h5>
+                <p class="footer__legend">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__text--link">MMi de Montbéliard</a>.</p>
+                <img src="/public/icones/MMI_1.webp" alt="logo du MMI" class="footer__logo">
+            </div>
+
+            <div class="footer_div">
+                <p class="footer__text">Xavier REBUFFONI MMI 1 C1</p>
+            </div>
+        
+        </footer>
+    </body>
+
+</html>

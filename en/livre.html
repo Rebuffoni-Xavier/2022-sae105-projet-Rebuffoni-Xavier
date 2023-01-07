@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+x-data="{"
+>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projet individuel MMI Montbéliard">
+
+        <title>Earth Topic</title>
+
+        <link rel="icon" href="/public/icones/shiny_glossy_earth_logo.png" />
+        <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/livre.css">
+        <link rel="stylesheet" href="/src/css/base/carrousel_livre.css">
+
+        <script defer src="https://unpkg.com/alpinejs"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="header__langue">
+                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header__langue--logo">
+            </a>
+
+            <a href="/fr/index.html" class="header__start">
+                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header__start--logo">
+            </a>
+
+            <button aria-controls="mainNav" 
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__btn"
+            >
+                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger" class="menu__btn--logo">
+            </button>
+
+            <nav id="mainNav" 
+            x-show="menuIsOpen" 
+            x-transition.duration.800ms
+            class="header__menu menu"
+            >
+                <ul class="menu__item item">
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Désolation <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/craintes.html"  class="sousmenu__text">Craintes</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/interstellar.html" class="sousmenu__text">Interstellar</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/islande.html" class="sousmenu__text">Islande</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Espoir <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/espoir.html" class="sousmenu__text">Espoir</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/livre.html" class="sousmenu__text">Là où chantent les écrevisses</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/carolina.html" class="sousmenu__text">Carolina</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li><a href="/fr/comment_agir.html" class="item__title">Comment agir ?</a></li>
+                    <li><a href="/fr/glossaire.html" class="item__title">Glossaire</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="livre">
+           <section>
+                <article>
+                    <h1>« LÀ OÙ CHANTENT LES ÉCREVISSES » : L'HARMONIE DE LA NATURE ET DE L'HOMME</h1>
+                    <img src="/public/img/Là_où_chantent_les_écrevisses_1.webp" alt="Couverture Là où chantent les écrevisses" width="300" class="img__principale">
+
+                    <details class="livre__resume resume">
+                        <summary class="resume__title">Résumé du livre</summary>
+                        <p class="resume__text">Pendant des années, les rumeurs les plus folles ont couru sur "la Fille des marais" de Barkley Cove, une petite ville de Caroline du Nord. Pourtant, Kya n'est pas cette fille sauvage et analphabète que tous imaginent et craignent. A l'âge de dix ans, abandonnée par sa famille, elle doit apprendre à survivre seule dans le marais, devenu pour elle un refuge naturel et une protection. Sa rencontre avec Tate, un jeune homme doux et cultivé qui lui apprend à lire et à écrire, lui fait découvrir la science et la poésie, transforme la jeune fille à jamais.
+                        Mais Tate, appelé par ses études, l'abandonne à son tour. La solitude devient si pesante que Kya ne se méfie pas assez de celui qui va bientôt croiser son chemin et lui promettre une autre vie. Lorsque l'irréparable se produit, elle ne peut plus compter que sur elle-même...</p>
+                    </details>
+                    
+                    <header class="livre__intro intro">
+                        <p class="intro__text">Pour vous prouver que ce monde peut exister, prenons un livre. Ce dernier s’appelle « Là où chantent les écrevisses » et a été écrit par Delia Owens. L’histoire suit une jeune fille vivant seule dans les marais de la Caroline du Nord. Sa vie est l’exemple parfait de la cohésion possible avec la nature.</p>
+                    </header>
+
+                    <div class="livre__article article">
+                        <h2>L'histoire d'une cohésion entre nature et homme</h2>
+
+                        <p class="article__text">Il y a une œuvre qui peut justement prouver qu’un monde en cohésion avec la nature est réalisable. Cette œuvre est un livre écrit par Delia Owens, publié en 2018 et se nommant <a href="/fr/glossaire.html" class="definition">« Là où chantent les écrevisses »</a>. Le titre peut en effet paraître étrange, pourtant ce roman nous donne un très bon aperçu de <strong>la cohésion possible avec la nature</strong>. Ce livre est d’autant plus intéressant qu’il reste très réaliste. On y suit les aventures d’une fille se prénommant Catherine Danielle Clarke ou juste Kya pour ses proches. Elle vit depuis toujours dans les marais de <a href="/fr/glossaire.html" class="definition">Caroline du Nord</a>. Elle a été élevée dans une famille fracturée où le père est violent avec tout le monde. Chaque membre de la famille a fini par partir pour fuir les coups du père jusqu’au jour où lui aussi est parti. C’est dans ce monde que Kya a dû vivre seule depuis son plus jeune âge. Pour y parvenir, <strong>elle a dû apprendre à se débrouiller seule dans le marais sans technologie et en n’ayant que quelques personnes sur qui compter</strong>. Durant toute sa vie elle a continué à apprendre de la nature en l’observant et en la dessinant.</p>
+                            
+                        <div class="article__citation citation">
+                            <blockquote>
+                                <p class="citation__text">« Durant toute sa vie elle a continué à apprendre de la nature en l’observant et en la dessinant. »</p> 
+                            </blockquote>
+                        </div>
+                            
+                        <p class="article__text--2">Ce marais était donc son environnement et c’était le seul endroit où elle se sentait chez elle. Tout le long de l’histoire elle va d’ailleurs faire des références à la nature dans la description de sa vie <strong>comme si elle vivait selon les codes du marais</strong>. La fin nous met aussi face à une réflexion sur les propres codes de la société.</p>
+                    </div>
+
+                    <div class="craintes__carrousel carrousel" x-data="{hrefCourant: '#ecran-1',}">
+                        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
+                        <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+                        hrefCourant = '#'+
+                                        [...$refs.parent.children]
+                                        .find(e=>e.getBoundingClientRect().x>=0)
+                                        .id
+                                                            ">
+                            <div id="ecran-1" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/Frame_nature_1.webp" alt="Arbre" class="carrousel__ecran--img">
+                                    <figcaption class="legend">Images provenant de l'adaptation cinématographique du film</figcaption>
+                                </figure>
+                            </div>
+                            <div id="ecran-2" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/Frame_nature_2.webp" alt="Coucher de soleil" class="carrousel__ecran--img">
+                                    <figcaption class="legend">Images provenant de l'adaptation cinématographique du film</figcaption>
+                                </figure>
+                            </div>
+                            <div id="ecran-3" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/Frame_nature_3.webp" alt="Cabane nature" class="carrousel__ecran--img">
+                                    <figcaption class="legend">Images provenant de l'adaptation cinématographique du film</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="livre__article article">
+                        <h2>Une cohésion possible</h2>
+
+                        <p class="article__text">Cette histoire, certes inventée, permet néanmoins de montrer qu'<strong>un monde en cohésion avec la nature est non seulement possible mais pourrait aussi être bénéfique</strong>. Possible car même si cela va demander d’énormes changements il suffit de le vouloir et d’y croire pour le faire. Nous n’avons jamais vécu complètement dans la nature. Nous nous contentons de l’observer comme une « bête de foire ».</p>
+                            
+                        <div class="article__citation citation">
+                            <blockquote>
+                                <p class="citation__text--2">« Pour Kya, il était suffisant de faire partie de cette suite naturelle d’évènements, rythmée par la même régularité que les marées. Elle se sentait attachée à sa planète d’une façon que peu de gens connaissent. Elle était enracinée dans la terre. Elle lui devait la vie. »</p> 
+                                <figcaption class="citation__legend">Extrait du livre <cite><a href="/fr/glossaire.html" class="definition">Là où chantent les écrevisses</a></cite>, sortis en 2018 et écrit par Delia Owens</figcaption>
+                            </blockquote>
+                        </div>
+                            
+                        <p class="article__text--2">C'est pour cela qu’un monde en cohésion complète avec la nature nous semble impossible à l’heure actuelle. Pourtant, cela ne l’est pas. Le but n’est pas d’abandonner tout du jour au lendemain pour aller vivre dans un marais comme Kya. Le but est de faire cette transition petit à petit à travers <strong>des actions concrètes</strong>. Les gouvernements ont du mal à accepter cette réalité. Ils ont du mal à commencer cette transition. Mais rien ne nous empêche à notre échelle de commencer cette transition. Dans ce livre, Kya continue sans cesse à apprendre de la nature en passant des jours entiers à l’observer. Elle partage son environnement avec les espèces qui peuplent le marais sans jamais tenter de les chasser.</p>
+
+                        <figure>
+                            <img src="/public/img/Apprendre_de_la_nature_1.webp" alt="Image de l'adpation cinéma du livre" width="168" class="article__img">
+                            <figcaption class="legend">Kya fait un dessin de ce qu'elle a observé</figcaption>
+                        </figure>
+
+                        <p class="article__text--2">Voilà l’exemple que nous devons suivre. <strong>Ne pas se contenter d'observer cette nature de loin ou de la dominer mais d'essayer de la comprendre</strong>. Cela peut se faire rien qu’en se baladant le week-end dans la forêt la plus proche. Cela peut également se faire rien qu’en limitant ses trajets en voiture. <strong>Nous ne devons pas chasser les espèces sans aucune raison ni même détruire des forêts entières sans en comprendre le fonctionnement </strong>. Ou sans même essayer d’observer l’écosystème qui vivait en paix jusque-là.</p>
+                    </div>
+
+                    <figure>
+                        <img src="/public/img/Nature_Bénéfique_1.webp" alt="Image de Kya en train de peindre" width="339" class="illustration">
+                        <figcaption class="legend">Kya en train de dessiner ce qu’elle a observer</figcaption>
+                    </figure>
+
+                    <div class="livre__article article">
+                        <h2>Une cohésion bénéfique</h2>
+
+                        <p class="article__text">Tout cela pourrait donc être <strong>possible</strong> mais aussi et surtout <strong>bénéfique</strong> pour nous. Nous avons construit une société régie par des codes dépassés depuis longtemps. La nature quant à elle ne juge personne. La nature ne fait pas la différence entre telle ou telle couleur de peau. La nature est juste et impartiale.</p>
+                            
+                        <div class="article__citation citation">
+                            <blockquote>
+                                <p class="citation__text">« La nature est juste et impartiale. »</p> 
+                            </blockquote>
+                        </div>
+                            
+                        <p class="article__text--2">Chacun y a sa place et chacun contribue à son échelle à construire tout un écosystème. C’est ce que l’on voit dans ce livre. Le marais est rempli d’une quantité impressionnante d’espèces de tout type. Pourtant tout semble <strong>calme</strong> et en <strong>paix</strong>. C’est l’ambiance qui se dégage le plus du livre. Cette paix qui règne dans ce marais et qui va même se refléter dans le comportement de Kya. <strong>La nature pourrait donc nous permettre d’évoluer aussi dans notre façon de réfléchir et dans notre façon de nous comporter</strong>.</p>
+                    </div>
+
+                     <a href="/fr/extraitlivre.html" class="article__button">
+                        Voir un extrait du livre que j'ai selectionné <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
+                    </a>
+
+                    <div>
+                        <h3>Bande annonce de l'adaptation cinématographique du livre "Là où chantent les écrevisses"</h3>
+                        <iframe width="360" height="315" src="https://www.youtube.com/embed/WYGWtSSPdY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube"></iframe>
+                    </div>
+                </article>
+           </section> 
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer__rs rs">
+                <h5 class="rs__title">Me suivre</h5>
+                <ul class="rs__link link">
+                    <li class="link__li">
+                        <a href="https://www.instagram.com/cine_feel_m/" class="link__li--li1 li1">
+                            <img src="/public/icones/instagram_1.webp" alt="logo Instagram" class="li1__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li2 li2">
+                            <img src="/public/icones/facebook_1.webp" alt="logo Facebook" class="li2__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="https://www.youtube.com/channel/UCeTZe0cGb4BJasd4RHtFR9w" class="link__li--li3 li3">
+                            <img src="/public/icones/youtube_(1)_1.webp" alt="logo Youtube" class="li3__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li4 li4">
+                            <img src="/public/icones/mail_1.webp" alt="logo mail" class="li4__img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/a_propos.html">
+                    <h5 class="nav__title">A propos</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/glossaire.html">
+                    <h5 class="nav__title">Glossaire</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/autres_projets.html">
+                    <h5 class="nav__title">Autres Projets</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/contact.html">
+                    <h5 class="nav__title">Contact</h5>
+                </a>
+            </nav>
+        
+            <div class="footer_div">
+                <h5 class="footer__title">Mention Légale</h5>
+                <p class="footer__legend">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__text--link">MMi de Montbéliard</a>.</p>
+                <img src="/public/icones/MMI_1.webp" alt="logo du MMI" class="footer__logo">
+            </div>
+
+            <div class="footer_div">
+                <p class="footer__text">Xavier REBUFFONI MMI 1 C1</p>
+            </div>
+        
+        </footer>
+    </body>
+
+</html>

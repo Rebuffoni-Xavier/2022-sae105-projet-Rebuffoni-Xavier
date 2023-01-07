@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+x-data="{"
+>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projet individuel MMI Montbéliard">
+
+        <title>Earth Topic</title>
+
+        <link rel="icon" href="/public/icones/shiny_glossy_earth_logo.png" />
+        <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/espoir.css">
+
+        <script defer src="https://unpkg.com/alpinejs"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="header__langue">
+                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header__langue--logo">
+            </a>
+
+            <a href="/fr/index.html" class="header__start">
+                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header__start--logo">
+            </a>
+
+            <button aria-controls="mainNav" 
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__btn"
+            >
+                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger" class="menu__btn--logo">
+            </button>
+
+            <nav id="mainNav" 
+            x-show="menuIsOpen" 
+            x-transition.duration.800ms
+            class="header__menu menu"
+            >
+                <ul class="menu__item item">
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Désolation <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/craintes.html"  class="sousmenu__text">Craintes</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/interstellar.html" class="sousmenu__text">Interstellar</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/islande.html" class="sousmenu__text">Islande</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Espoir <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/espoir.html" class="sousmenu__text">Espoir</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/livre.html" class="sousmenu__text">Là où chantent les écrevisses</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/carolina.html" class="sousmenu__text">Carolina</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li><a href="/fr/comment_agir.html" class="item__title">Comment agir ?</a></li>
+                    <li><a href="/fr/glossaire.html" class="item__title">Glossaire</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="espoir">
+           <section>
+                <article>
+                    <h1>LA NATURE : NOTRE DERNIER ESPOIR ?</h1>
+                    <img src="/public/img/logo.webp" alt="Logo arbre" width="297" class="img__principale">
+                    
+                    <header class="espoir__intro intro">
+                        <p class="intro__text">Mais tout n’est pas perdu, il reste toujours un espoir. Cet espoir est représenté par la nature. Si nous vivons en cohésion avec elle plutôt que de la détruire, nous pourrions changer la donne. Le défi de ce siècle, c’est de réaliser tout ce que peut nous apporter la nature. Et ce futur n’est pas qu’une histoire fantaisiste. Il peut réellement exister si nous agissons.</p>
+                    </header>
+
+                    <div class="espoir__article article">
+                        <p class="article__text">Malgré toutes les <a href="/fr/craintes.html" class="definition">craintes</a> que nous pouvons avoir quant au futur de la Terre et de l’humanité, il reste de <strong>l'espoir</strong> et nous devons nous focaliser là-dessus. Mon rêve c’est de voir une Terre où les humains ont fini par faire la paix. La paix non seulement entre eux mais aussi avec la nature et la biodiversité. Cela fait des siècles que nous exploitons la Terre sans aucun respect ni aucun remords. Pourtant, nous pourrions et nous devons changer les choses. La planète a tellement plus à offrir que des ressources pour tous nos gadgets.</p>
+                            
+                        <div class="article__citation citation">
+                            <blockquote>
+                                <p class="citation__text">« La planète a tellement plus à offrir que des ressources pour tous nos gadgets. »</p> 
+                            </blockquote>
+                        </div>
+                            
+                        <p class="article__text--2">Si nous faisions attention aux choses qui nous entourent nous verrions combien <strong>la Terre est belle</strong>. Toute la richesse de la vie qu’elle abrite. Toute la diversité des paysages.</p>
+
+                        <figure>
+                            <img src="/public/img/IMG_20220802_150747.webp" alt="Paysage de montagne" width="267" class="article__img">
+                            <figcaption class="legend">Montagnes dans les Pyrennées</figcaption>
+                        </figure>
+
+                        <p class="article__text--2">Alors oui s’il y a bien un monde dans lequel j’ai envie que mes enfants grandissent c’est un monde où les gens auront pris conscience de ça. Un monde où les gens auront pris conscience du fait qu’on ne peut gaspiller ces richesses sous peine de voir disparaître la Terre et l’humanité avec. Où les gens vivront en cohésion avec la nature, la faune, la flore et la Terre en général. Où l’humanité aura repris sa place parmi toutes les espèces vivantes qui peuplent cette Terre. Si nous vivons en cohésion avec la nature nous pouvons inverser la tendance du <strong>réchauffement climatique</strong>. Mais nous pouvons aussi apprendre de cette dernière pour faire évoluer la société.</p>
+                    </div>
+                </article>
+           </section> 
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer__rs rs">
+                <h5 class="rs__title">Me suivre</h5>
+                <ul class="rs__link link">
+                    <li class="link__li">
+                        <a href="https://www.instagram.com/cine_feel_m/" class="link__li--li1 li1">
+                            <img src="/public/icones/instagram_1.webp" alt="logo Instagram" class="li1__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li2 li2">
+                            <img src="/public/icones/facebook_1.webp" alt="logo Facebook" class="li2__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="https://www.youtube.com/channel/UCeTZe0cGb4BJasd4RHtFR9w" class="link__li--li3 li3">
+                            <img src="/public/icones/youtube_(1)_1.webp" alt="logo Youtube" class="li3__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li4 li4">
+                            <img src="/public/icones/mail_1.webp" alt="logo mail" class="li4__img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/a_propos.html">
+                    <h5 class="nav__title">A propos</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/glossaire.html">
+                    <h5 class="nav__title">Glossaire</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/autres_projets.html">
+                    <h5 class="nav__title">Autres Projets</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/contact.html">
+                    <h5 class="nav__title">Contact</h5>
+                </a>
+            </nav>
+        
+            <div class="footer_div">
+                <h5 class="footer__title">Mention Légale</h5>
+                <p class="footer__legend">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__text--link">MMi de Montbéliard</a>.</p>
+                <img src="/public/icones/MMI_1.webp" alt="logo du MMI" class="footer__logo">
+            </div>
+
+            <div class="footer_div">
+                <p class="footer__text">Xavier REBUFFONI MMI 1 C1</p>
+            </div>
+        
+        </footer>
+    </body>
+
+</html>

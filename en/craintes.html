@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+x-data="{"
+>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projet individuel MMI Montbéliard">
+
+        <title>Earth Topic</title>
+
+        <link rel="icon" href="/public/icones/shiny_glossy_earth_logo.png" />
+        <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/craintes.css">
+        <link rel="stylesheet" href="/src/css/base/carrousel_craintes.css">
+
+        <script defer src="https://unpkg.com/alpinejs"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="header__langue">
+                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header__langue--logo">
+            </a>
+
+            <a href="/fr/index.html" class="header__start">
+                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header__start--logo">
+            </a>
+
+            <button aria-controls="mainNav" 
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__btn"
+            >
+                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger" class="menu__btn--logo">
+            </button>
+
+            <nav id="mainNav" 
+            x-show="menuIsOpen" 
+            x-transition.duration.800ms
+            class="header__menu menu"
+            >
+                <ul class="menu__item item">
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Désolation <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/craintes.html"  class="sousmenu__text">Craintes</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/interstellar.html" class="sousmenu__text">Interstellar</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/islande.html" class="sousmenu__text">Islande</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Espoir <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/espoir.html" class="sousmenu__text">Espoir</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/livre.html" class="sousmenu__text">Là où chantent les écrevisses</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/carolina.html" class="sousmenu__text">Carolina</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li><a href="/fr/comment_agir.html" class="item__title">Comment agir ?</a></li>
+                    <li><a href="/fr/glossaire.html" class="item__title">Glossaire</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="craintes">
+           <section>
+                <article>
+                    <h1>UN MONDE EN PERIL</h1>
+                    <img src="/public/img/Terre_en_feu.webp" alt="la Terre en train de bruler" width="444" class="img__principale">
+
+                    <header class="craintes__intro intro">
+                        <p class="intro__text">Si on fait le constat de la Terre en 2022 et des messages de prévention des ONG, comment ne pas craindre un avenir où la nature sera complètement détruite ? Si on veut pouvoir agir il faut déjà ouvrir les yeux sur ce qui risque d’arriver si on ne fait rien.</p>
+                    </header>
+
+                    <div class="craintes__article article">
+                        <h2>La Terre en 2022</h2>
+
+                        <ul class="article__li">
+                            <li class="article1__li--text"><strong>24 Février</strong> = Après de nombreuses opérations militaires, la Russie déclare officiellement la guerre à l’Ukraine. C’est le début d’une longue série de combats comprenant des bombardements détruisant la faune et la flore locale.</li>
+                            <li class="article1__li--text"><strong>28 Février</strong> = Nouveau rapport du <a href="/fr/glossaire.html" class="definition">GIEC</a>. Le dérèglement climatique s’est encore accéléré. Nous n’avons plus que 8 ans à peine pour changer les choses avant qu’il ne soit trop tard. C’est le dernier espoir pour la nature.</li>
+                            <li class="article1__li--text"><strong>3 Juillet</strong> = Effondrement du glacier de la Marmolada dans les Alpes Italiennes. Un bloc de glace s’est détaché du glacier avant de dévaler à une vitesse de 300 km/h. La veille, un record de température avait été enregistré au sommet du glacier (10 °C).</li>
+                            <li class="article1__li--text"><strong>Été</strong> = La Terre brûle. De nombreux pays font face à des feux de forêt dévastateurs et à une vague de chaleur encore jamais vue. En Gironde, le bilan est pour l’instant de 26 726 hectares de forêt brûlée depuis le début de l’année.</li>
+                            <li class="article1__li--text"><strong>31 Août</strong> = Au Pakistan, la mousson est bien plus dense qu’en temps normal. A cette date la surface totale de terre inondée dans le pays est de 86 000 kilomètres carrés. Cela représente presque 10 % de la surface du pays.</li>
+                        </ul>
+                    </div>
+
+                    <figure class="craintes__illustration illustration">
+                        <img src="/public/img/Incendie_Gironde.webp" alt="carte des incendies en France" width="199" class="illustration__img">
+                        <figcaption class="legend">Carte des incendies en France</figcaption>
+                    </figure>
+
+                    <div class="craintes__article article">
+                        <h2>Et la Terre dans le futur ?</h2>
+
+                        <p class="article__text">La liste précédente est une liste non exhaustive des conséquences du <strong>réchauffement climatique</strong> en 2022. Pourtant, elle est déjà bien remplie et représentative d’un monde en déclin. Certes, il y a toujours eu des événements de ce genre dans l’histoire mais ils sont de plus en plus fréquents et de plus en plus intenses.</p>
+                        
+                        <div class="article__citation citation">
+                            <blockquote>
+                                <p class="citation__text">« Certes, il y a toujours eu des événements de ce genre dans l’histoire mais ils sont de plus en plus fréquents et de plus en plus intenses. »</p> 
+                            </blockquote>
+                        </div>
+
+                        <p class="article__text--2">Des glaciers comme la Marmolada risquent de disparaître à l’avenir. Des forêts entières seront encore détruites et ne repousseront pas ou dans de trop nombreuses années. Dans ces forêts, la faune et la flore sont à l’agonie. Des espèces entières sont menacées ou vont être menacées à l’avenir. Les catastrophes naturelles s’accentuent comme au Pakistan et seront encore plus régulières au fil des années. Si ces catastrophes continuent nous devrons faire face à une vague de migration climatique et à des conflits liés à l’accès aux ressources. <strong>Tout cela est signe d’une planète en souffrance et en déclin.</strong></p>
+                    
+                        <figure>
+                            <img src="/public/img/Inondation_Pakistan.webp" alt="photo inondation Pakistan" width="307" class="article__img">
+                            <figcaption class="legend">Inondation Pakistan</figcaption>
+                        </figure>
+
+                        <p class="article__text--2">Mais nous courons aussi vers notre propre fin en détruisant notre propre habitat. Je ne sais pas de quoi sera fait le futur mais je sais une chose : malgré ces événements, malgré ce qui risque d’arriver, <strong>les gouvernements continuent de nier l’évidence</strong>. Les gens continuent de fermer les yeux. De nombreux organismes tentent désespérément de nous alerter. Pourtant rien ne change et cette liste s’agrandit chaque année. Et si cette liste s’agrandit, comment ne pas craindre une fin certaine ? Une disparition de toute la faune et la flore. Une destruction de la Terre entière. Et par conséquent une fin de l’humanité. Donc oui je me demande quels en seront les conséquences ? Est-ce que mes futurs enfants pourront vivre une belle vie ? Y aura-t-il une future génération ? Est-ce que les jours sont comptés pour l’humanité ? Quand est ce que nous allons agir ? Voilà des questions que beaucoup de gens se posent aussi.</p>
+                    </div>
+                    
+                    <div class="craintes__carrousel carrousel" x-data="{hrefCourant: '#ecran-1',}">
+                        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
+                        <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+                        hrefCourant = '#'+
+                                        [...$refs.parent.children]
+                                        .find(e=>e.getBoundingClientRect().x>=0)
+                                        .id
+                                                            ">
+                            <div id="ecran-1" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/Craintes_Carrousel1.webp" alt="Rhinoceros tué braconnage" class="carrousel__ecran--img">
+                                    <figcaption class="legend">Braconnage</figcaption>
+                                </figure>
+                            </div>
+                            <div id="ecran-2" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/Craintes_Carrousel2.webp" alt="Déforestation forêt Amazonie" class="carrousel__ecran--img">
+                                    <figcaption class="legend">Déforestation</figcaption>
+                                </figure>
+                            </div>
+                            <div id="ecran-3" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/Craintes_Carrousel3.webp" alt="Fonte des glaciers" class="carrousel__ecran--img">
+                                    <figcaption class="legend">Fonte des glaciers</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+           </section> 
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer__rs rs">
+                <h5 class="rs__title">Me suivre</h5>
+                <ul class="rs__link link">
+                    <li class="link__li">
+                        <a href="https://www.instagram.com/cine_feel_m/" class="link__li--li1 li1">
+                            <img src="/public/icones/instagram_1.webp" alt="logo Instagram" class="li1__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li2 li2">
+                            <img src="/public/icones/facebook_1.webp" alt="logo Facebook" class="li2__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="https://www.youtube.com/channel/UCeTZe0cGb4BJasd4RHtFR9w" class="link__li--li3 li3">
+                            <img src="/public/icones/youtube_(1)_1.webp" alt="logo Youtube" class="li3__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li4 li4">
+                            <img src="/public/icones/mail_1.webp" alt="logo mail" class="li4__img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/a_propos.html">
+                    <h5 class="nav__title">A propos</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/glossaire.html">
+                    <h5 class="nav__title">Glossaire</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/autres_projets.html">
+                    <h5 class="nav__title">Autres Projets</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/contact.html">
+                    <h5 class="nav__title">Contact</h5>
+                </a>
+            </nav>
+        
+            <div class="footer_div">
+                <h5 class="footer__title">Mention Légale</h5>
+                <p class="footer__legend">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__text--link">MMi de Montbéliard</a>.</p>
+                <img src="/public/icones/MMI_1.webp" alt="logo du MMI" class="footer__logo">
+            </div>
+
+            <div class="footer_div">
+                <p class="footer__text">Xavier REBUFFONI MMI 1 C1</p>
+            </div>
+        
+        </footer>
+    </body>
+
+</html>

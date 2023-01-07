@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+x-data="{"
+>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projet individuel MMI Montbéliard">
+
+        <title>Earth Topic</title>
+
+        <link rel="icon" href="/public/icones/shiny_glossy_earth_logo.png" />
+        <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/carolina.css">
+
+        <script defer src="https://unpkg.com/alpinejs"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="header__langue">
+                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header__langue--logo">
+            </a>
+
+            <a href="/fr/index.html" class="header__start">
+                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header__start--logo">
+            </a>
+
+            <button aria-controls="mainNav" 
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__btn"
+            >
+                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger" class="menu__btn--logo">
+            </button>
+
+            <nav id="mainNav" 
+            x-show="menuIsOpen" 
+            x-transition.duration.800ms
+            class="header__menu menu"
+            >
+                <ul class="menu__item item">
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Désolation <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/craintes.html"  class="sousmenu__text">Craintes</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/interstellar.html" class="sousmenu__text">Interstellar</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/islande.html" class="sousmenu__text">Islande</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Espoir <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/espoir.html" class="sousmenu__text">Espoir</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/livre.html" class="sousmenu__text">Là où chantent les écrevisses</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/carolina.html" class="sousmenu__text">Carolina</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li><a href="/fr/comment_agir.html" class="item__title">Comment agir ?</a></li>
+                    <li><a href="/fr/glossaire.html" class="item__title">Glossaire</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="musique">
+           <section>
+                <article>
+                    <h1>« CAROLINA » : UNE MUSIQUE AU RYTHME DE LA NATURE</h1>
+                    <div class="audio">
+                        <a href="https://www.youtube.com/watch?v=3Q94kA7llGw">
+                            <img src="/public/img/Carolina_Taylor_Swift.webp" alt="Musique Carolina" width="360" class="img__principale">
+                        </a>
+                        <audio controls class="audio__music">
+                            <source src="/public/music/taylor-swift-carolina-from-the-motion-picture-where-the-crawdads-sing-audio.mp3" type="audio/mpeg" class="audio__music--source">
+                        </audio>
+                    </div>
+                    
+                    <header class="musique__intro intro">
+                        <p class="intro__text">Cette musique est celle tirée de l’adaptation cinématographique du livre « Là où chantent les écrevisses ». Elle a été écrite par la talentueuse Taylor Swift. Les paroles de cette musique rappellent non seulement la vie de l’héroïne principale du livre mais aussi et surtout la nature. C’est pour cette dernière raison qu’elle est particulièrement intéressante, tant au niveau des paroles que de la musique.</p>
+                    </header>
+
+                    <div class="musique__article article">
+                        <h2>La naissance de la musique</h2>
+
+                        <p class="article__text">La musique que j’ai sélectionnée est celle qui a été faite pour l’adaptation cinématographique du livre <strong>« Là où chantent les écrevisses »</strong>. Cette musique a été composée par l’artiste <a href="/fr/glossaire.html" class="definition">Taylor Swift</a> et est sortie le 24 juin 2022. Artiste mondialement connue, Taylor Swift a écrit de nombreuses musiques qui ont obtenu de nombreux prix. Elle s’inscrit aussi dans plusieurs genres à travers ses albums. Passant de la country à ses débuts à des chansons plus folk dans ses deux albums <strong>« Folklore »</strong> et <strong>« Evermore »</strong> sortis en 2020. Quand Taylor Swift a appris qu’une adaptation cinématographique allait être faite, elle a tout de suite souhaité participer au projet en écrivant une chanson. Elle s’est d’ailleurs beaucoup investie dans la composition de la musique en utilisant par exemple uniquement des instruments qui existaient déjà à l’époque où l’intrigue du livre se déroule. On peut retrouver par exemple du <strong>violon</strong>, de la <strong>guitare</strong> ou de la <strong>mandoline</strong> qui sont tous des instruments acoustiques.</p>
+                    </div>
+
+                    <figure>
+                        <img src="/public/img/Taylor_Swift.webp" alt="Photo de Taylor Swift" width="187" class="illustration__Swift">
+                        <figcaption class="legend">Taylor Swift</figcaption>
+                    </figure>
+
+                    <div class="musique__article article">
+                        <h2>La chanson de la Caroline</h2>
+
+                        <div class="article__block">
+                            <p class="article__block--text">Les paroles de la chanson font beaucoup référence au marais ce qui permet encore une fois d’ouvrir les yeux sur <strong>la beauté de la nature</strong>. Le premier vers de la chanson évoque déjà les ruisseaux de la <a href="/fr/glossaire.html" class="definition">Caroline du Nord</a>. Puis les paroles évoquent par la suite les oiseaux, les nuages, le sable, la mer, etc…</p>
+                            
+                            <figure class="article__block--image image">
+                                <img src="/public/img/Paroles_Carolina.webp" alt="Parole de la chanson Carolina" width="195" class="image__img">
+                                <figcaption class="legend__paroles">Paroles et traduction d'une partie de la musique</figcaption>
+                            </figure>
+                        </div>
+
+                        <p class="article__text--2">La musique contient aussi des sonorités que l’on peut relier à la <strong>Caroline</strong>. Tout ceci nous plonge donc dans l’ambiance des marais et dans l’ambiance du livre. Taylor Swift a composé une musique qui permet de se plonger directement dans cette ambiance naturelle.</p>
+                            
+                        <div class="article__citation citation">
+                            <blockquote>
+                                <p class="citation__text">« Taylor Swift a composé une musique qui permet de se plonger directement dans cette ambiance naturelle. »</p> 
+                            </blockquote>
+                        </div>
+                            
+                        <p class="article__text--2">C’est comme si on s’imprégnait de la nature durant les quelques minutes d’écoute. Par ailleurs, les paroles décrivent très bien la vie de Kya. Cette vie très reliée à la nature et très fusionnelle avec cette dernière.</p>
+                    </div>
+                </article>
+           </section> 
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer__rs rs">
+                <h5 class="rs__title">Me suivre</h5>
+                <ul class="rs__link link">
+                    <li class="link__li">
+                        <a href="https://www.instagram.com/cine_feel_m/" class="link__li--li1 li1">
+                            <img src="/public/icones/instagram_1.webp" alt="logo Instagram" class="li1__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li2 li2">
+                            <img src="/public/icones/facebook_1.webp" alt="logo Facebook" class="li2__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="https://www.youtube.com/channel/UCeTZe0cGb4BJasd4RHtFR9w" class="link__li--li3 li3">
+                            <img src="/public/icones/youtube_(1)_1.webp" alt="logo Youtube" class="li3__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li4 li4">
+                            <img src="/public/icones/mail_1.webp" alt="logo mail" class="li4__img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/a_propos.html">
+                    <h5 class="nav__title">A propos</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/glossaire.html">
+                    <h5 class="nav__title">Glossaire</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/autres_projets.html">
+                    <h5 class="nav__title">Autres Projets</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/contact.html">
+                    <h5 class="nav__title">Contact</h5>
+                </a>
+            </nav>
+        
+            <div class="footer_div">
+                <h5 class="footer__title">Mention Légale</h5>
+                <p class="footer__legend">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__text--link">MMi de Montbéliard</a>.</p>
+                <img src="/public/icones/MMI_1.webp" alt="logo du MMI" class="footer__logo">
+            </div>
+
+            <div class="footer_div">
+                <p class="footer__text">Xavier REBUFFONI MMI 1 C1</p>
+            </div>
+        
+        </footer>
+    </body>
+
+</html>

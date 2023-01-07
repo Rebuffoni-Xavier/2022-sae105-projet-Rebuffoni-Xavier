@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+x-data="{"
+>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projet individuel MMI Montbéliard">
+
+        <title>Earth Topic</title>
+
+        <link rel="icon" href="/public/icones/shiny_glossy_earth_logo.png" />
+        <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/interstellar.css">
+
+        <script defer src="https://unpkg.com/alpinejs"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="header__langue">
+                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header__langue--logo">
+            </a>
+
+            <a href="/fr/index.html" class="header__start">
+                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header__start--logo">
+            </a>
+
+            <button aria-controls="mainNav" 
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__btn"
+            >
+                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger" class="menu__btn--logo">
+            </button>
+
+            <nav id="mainNav" 
+            x-show="menuIsOpen" 
+            x-transition.duration.800ms
+            class="header__menu menu"
+            >
+                <ul class="menu__item item">
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Désolation <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/craintes.html"  class="sousmenu__text">Craintes</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/interstellar.html" class="sousmenu__text">Interstellar</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/islande.html" class="sousmenu__text">Islande</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Espoir <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/espoir.html" class="sousmenu__text">Espoir</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/livre.html" class="sousmenu__text">Là où chantent les écrevisses</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/carolina.html" class="sousmenu__text">Carolina</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li><a href="/fr/comment_agir.html" class="item__title">Comment agir ?</a></li>
+                    <li><a href="/fr/glossaire.html" class="item__title">Glossaire</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="interstellar">
+           <section>
+                <article>
+                    <h1>INTERSTELLAR : UNE BONNE REPRÉSENTATION DE L'AVENIR ?</h1>
+                    <iframe width="360" height="315" src="https://www.youtube.com/embed/VaOijhK3CRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube"></iframe>
+                    
+                    <header class="interstellar__intro intro">
+                        <p class="intro__text">Film de science-fiction sorti en 2014 et réalisé par Christopher Nolan, Interstellar est l’exemple parfait de ce qui pourrait se passer dans le futur si nous ne faisons rien. Cette histoire est de la science-fiction pourtant cela pourrait ne pas être si loin de la réalité ou dûmoins d’une réalité future.</p>
+                    </header>
+
+                    <a href="/fr/filmoreal.html" class="article__button">
+                        Filmographie du réalisateur <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
+                    </a>
+
+                    <div class="interstellar__article article">
+                        <h2>Le déclin des humains</h2>
+                        
+                        <p class="article__text">Pour mieux illustrer ce qui pourrait se passer dans le futur si nous n’agissons pas, j’ai choisi le film <a href="/fr/glossaire.html" class="definition">Interstellar</a>. Ce dernier est un film de science fiction sorti en 2014 et réalisé par Christopher Nolan. L’histoire est une <a href="/fr/glossaire.html" class="definition">dystopie</a> de la Terre dans le futur. Elle représente parfaitement les craintes que j’ai citées dans le <a href="/fr/craintes.html" class="definition">le précédent article</a>. Un monde où les gens ont fermé les yeux jusqu’à ce qu’il soit trop tard pour changer les choses. Une terre tellement polluée qu’une couche de poussière s’est répandue dans l’atmosphère. Plus rien ne pousse excepté du maïs. Les derniers survivants de l’humanité se sont convertis en agriculteurs ; épuisant les dernières ressources de la Terre et respirant de l’air pollué par la poussière.</p>
+
+                        <figure>
+                            <img src="/public/img/Couche_de_poussière_1.webp" alt="tempête de poussière dans Interstellar" width="336" class="article__img">
+                            <figcaption class="legend">Tempête de poussière</figcaption>
+                        </figure>
+
+                        <p class="article__text--2">Une population au bord de l’extinction. Une société qui profite encore de l’aspect utilitaire de la nature sans en voir la beauté. Dans ce chaos, on suit un ancien pilote de la <a href="/fr/glossaire.html" class="definition">NASA</a> vivant avec ses enfants dans une ferme. Un jour, il se retrouve enrôlé par ce qu’il reste de la NASA pour une mission : sauver l’humanité en partant à la recherche d’une nouvelle planète habitable. Durant son périple, il va découvrir de nouveaux mondes vierges où la nature règne en maître. Mais pourra-t-il revoir ses enfants un jour, sachant que la dimension temporelle n’est pas la même sur ces autres planètes ? L’histoire se concentre sur cette dualité entre sauver l’humanité sans jamais revoir ses enfants ou revoir ses enfants sans pouvoir sauver l’humanité.</p>
+                    </div>
+
+                    <img src="/public/img/Interstellar_2_1.webp" alt="Affiche de Interstellar" width="347" class="illustration">
+
+                    <div class="interstellar__article article">
+                        <h2>Une dystopie bien réelle</h2>
+
+                        <p class="article__text">Mais ce futur nous permet surtout de nous rendre compte des conséquences du <strong>réchauffement climatique</strong>. Si nous ne faisons rien, c’est dans ce monde que nos futurs enfants, que toutes les générations suivantes vivront. Plus nous tardons à agir, plus cette dystopie devient une réalité proche. Nous devons être prêts à sacrifier certaines choses si nous voulons sauver ceux que nous aimons. C’est l’autre thème central du film : l’amour. </p>
+
+                        <div class="article__citation citation">
+                            <blockquote>
+                                <p class="citation__text">« De toutes les choses que nous percevons, seul l’amour transcende les dimensions temporelles et spatiales. »</p> 
+                            </blockquote>
+                            <figcaption class="citation__legend">Dialogue dans <cite><a href="/fr/glossaire.html" class="definition">Interstellar</a></cite> de Christopher Nolan</figcaption>
+                        </div>
+
+                        <p class="article__text--2">Cela permet aussi de réaliser que même si nous sommes morts avant de vivre dans un tel monde, il faut penser à ceux que nous aimons. En pensant à aimer nous pouvons ressentir aussi de l’empathie pour toutes ces personnes qui chaque jour subissent déjà les conséquences du réchauffement climatique. Et à toutes ces futures personnes pour qui ce film sera une réalité. Alors oui cette histoire peut sembler une pure fiction pourtant ce n’est pas le cas. Certains pays subissent actuellement les conséquences du réchauffement climatique et en voient les conséquences chaque jour <a href="/fr/islande.html" class="definition">(voir article suivant)</a>.</p>
+                    </div>
+                </article>
+           </section> 
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer__rs rs">
+                <h5 class="rs__title">Me suivre</h5>
+                <ul class="rs__link link">
+                    <li class="link__li">
+                        <a href="https://www.instagram.com/cine_feel_m/" class="link__li--li1 li1">
+                            <img src="/public/icones/instagram_1.webp" alt="logo Instagram" class="li1__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li2 li2">
+                            <img src="/public/icones/facebook_1.webp" alt="logo Facebook" class="li2__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="https://www.youtube.com/channel/UCeTZe0cGb4BJasd4RHtFR9w" class="link__li--li3 li3">
+                            <img src="/public/icones/youtube_(1)_1.webp" alt="logo Youtube" class="li3__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li4 li4">
+                            <img src="/public/icones/mail_1.webp" alt="logo mail" class="li4__img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/a_propos.html">
+                    <h5 class="nav__title">A propos</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/glossaire.html">
+                    <h5 class="nav__title">Glossaire</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/autres_projets.html">
+                    <h5 class="nav__title">Autres Projets</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/contact.html">
+                    <h5 class="nav__title">Contact</h5>
+                </a>
+            </nav>
+        
+            <div class="footer_div">
+                <h5 class="footer__title">Mention Légale</h5>
+                <p class="footer__legend">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__text--link">MMi de Montbéliard</a>.</p>
+                <img src="/public/icones/MMI_1.webp" alt="logo du MMI" class="footer__logo">
+            </div>
+
+            <div class="footer_div">
+                <p class="footer__text">Xavier REBUFFONI MMI 1 C1</p>
+            </div>
+        
+        </footer>
+    </body>
+
+</html>

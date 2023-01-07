@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+x-data="{"
+>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projet individuel MMI Montbéliard">
+
+        <title>Earth Topic</title>
+
+        <link rel="icon" href="/public/icones/shiny_glossy_earth_logo.png" />
+        <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/islande.css">
+
+        <script defer src="https://unpkg.com/alpinejs"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="header__langue">
+                <img src="/public/icones/Flag_of_the_United_Kingdom_(3-5)_1.webp" alt="changer la langue en anglais" class="header__langue--logo">
+            </a>
+
+            <a href="/fr/index.html" class="header__start">
+                <img src="/public/icones/Logo_site_1.webp" alt="logo du site" class="header__start--logo">
+            </a>
+
+            <button aria-controls="mainNav" 
+            @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__btn"
+            >
+                <img src="/public/icones/menu-burger_1.webp" alt="logo menu burger" class="menu__btn--logo">
+            </button>
+
+            <nav id="mainNav" 
+            x-show="menuIsOpen" 
+            x-transition.duration.800ms
+            class="header__menu menu"
+            >
+                <ul class="menu__item item">
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Désolation <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/craintes.html"  class="sousmenu__text">Craintes</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/interstellar.html" class="sousmenu__text">Interstellar</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/islande.html" class="sousmenu__text">Islande</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li>
+                        <section x-data="{isOpen:false}">
+                            <a @click="isOpen = !isOpen" class="item__title">
+                                Espoir <img src="/public/icones/plus_white.svg" alt="Icone plus" class="plus">
+                            </a>
+                            <ul x-show="isOpen" class="item__sousmenu sousmenu">
+                                <li>
+                                    <a href="/fr/espoir.html" class="sousmenu__text">Espoir</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/livre.html" class="sousmenu__text">Là où chantent les écrevisses</a>
+                                </li>
+                                <li>
+                                    <a href="/fr/carolina.html" class="sousmenu__text">Carolina</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li><a href="/fr/comment_agir.html" class="item__title">Comment agir ?</a></li>
+                    <li><a href="/fr/glossaire.html" class="item__title">Glossaire</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="islande">
+           <section>
+                <article>
+                    <h1>L'ISLANDE FACE AU RECHAUFFEMENT CLIMATIQUE</h1>
+                    <img src="/public/img/Glacier_Islande.webp" alt="Glacier Islande" width="331" class="img__principale">
+                    
+                    <header class="islande__intro intro">
+                        <p class="intro__text">Si vous n’êtes toujours pas convaincu de ce qui est en train de se dérouler, voyons un exemple plus concret. L’Islande est un des nombreux pays déjà touché par les conséquences du réchauffement climatique avec une surface de glace qui rétrécit d’année en année. Ce pays met donc en lumière ce que nous pouvons craindre pour le futur.</p>
+                    </header>
+
+                    <div class="islande__article article">
+                        <h2>"Terre de feu et de glace"</h2>
+
+                        <p class="article__text">On pourrait se dire que les conséquences du <strong>réchauffement climatique</strong> n’existent que dans les films de science fiction comme <a href="/fr/glossaire.html" class="definition">Interstellar</a>. Pourtant ce n’est pas le cas, certaines conséquences sont déjà visibles en ce moment et le seront encore plus à l’avenir. Pour s’en rendre compte j’ai choisi un exemple <a href="/fr/glossaire.html" class="definition">l'Islande</a>. Ce pays qui s’étend sur une île de plus de 200 000 km² et où plus de 300 000 habitants y vivent. L’Islande ne fait pas partie de l’Union Européenne. Mais elle adhère à d’autres organisations comme <a href="/fr/glossaire.html" class="definition">l'OTAN</a> ou <a href="/fr/glossaire.html" class="definition">l'ONU</a>. Chaque année, de nombreux touristes viennent profiter de la beauté de ce pays avec ses paysages grandioses. L’Islande est d’ailleurs réputée pour son dépaysement total et sa biodiversité d’une grande richesse. Sur cette île, la nature règne en maître et offre de somptueux spectacles entre la chaleur des volcans et le froid de la glace. Ceci lui vaut d’ailleurs le surnom de <strong>« terre de feu et de glace »</strong>. Ces paysages ont servi par ailleurs de lieu de tournage pour le célèbre film Interstellar <a href="/fr/interstellar.html" class="definition">(voir article précédent)</a>.</p>
+
+                        <figure>
+                            <img src="/public/img/Tournage_Interstellar_1.webp" alt="Tournage Interstellar" width="175" class="article__img">
+                            <figcaption class="legend">Photo de tournage du film Interstellar</figcaption>
+                        </figure>
+
+                        <p class="article__text--2">Ce pays est aussi très important aujourd’hui par sa position vis à vis du réchauffement climatique.</p>
+                    </div>
+
+                    <div class="islande__article article">
+                        <h2>Un pays en danger</h2>
+
+                        <p class="article__text">En effet, l’Islande pourrait changer radicalement à l’avenir. C’est une des conséquences du <strong>réchauffement climatique</strong> dont tout le monde parle : la fonte des glaciers. Dans un pays constitué en grande partie de glace comme l’Islande cela pourrait être dramatique. Ce phénomène est déjà en marche depuis des décennies. Depuis l’an 2000, la surface de glace perdue est énorme et cela pourrait s’aggraver dans le futur. D’après de récentes études, d’ici 200 à 300 ans il se pourrait qu’il n’y ait plus du tout de glace en Islande.</p> 
+                           
+                        <div class="article__citation citation">
+                            <blockquote>
+                                <p class="citation__text">« D’après de récentes études, d’ici 200 à 300 ans il se pourrait qu’il n’y ait plus du tout de glace en Islande. »</p> 
+                            </blockquote>
+                        </div>
+
+                        <p class="article__text--2">La biodiversité pourrait radicalement changer et de nombreuses espèces pourraient disparaître. Plus de paysages grandioses non plus. Rien que de la désolation. Mais cela pourrait aussi impacter en profondeur les habitants de cette île. Si la biodiversité change, les habitudes des humains changeront obligatoirement. Plus la même nourriture. Plus le même terrain pour évoluer. Tout ce sur quoi le pays se base actuellement pourrait s’éteindre avec les glaciers.</p>
+
+                        <figure>
+                            <img src="/public/img/Fonte_des_glaciers_en_Islande_1.webp" alt="Fonte des glaciers en Islande" width="239" class="article__img">
+                            <figcaption class="legend">Avant/Après d’un glacier en Islande</figcaption>
+                        </figure>
+
+                        <p class="article__text--2">Ce n’est pas tout, si ce phénomène peut impacter l’Islande ce n’est que la partie visible de l’iceberg. Car, en fondant, les glaciers déversent des icebergs dans l’océan ce qui contribue à l’augmentation du niveau de la mer. Ainsi, <strong>toutes les populations côtières du monde pourraient être touchées</strong>.</p>
+                    </div>
+
+                    <a href="/fr/friseautrespays.html" class="article__button">
+                        Voir d'autres pays touchés par le réchauffement climatique <img src="/public/icones/arrow-right_1.webp" alt="icone de fleche" class="article__button--fleche">
+                    </a>
+                </article>
+           </section> 
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer__rs rs">
+                <h5 class="rs__title">Me suivre</h5>
+                <ul class="rs__link link">
+                    <li class="link__li">
+                        <a href="https://www.instagram.com/cine_feel_m/" class="link__li--li1 li1">
+                            <img src="/public/icones/instagram_1.webp" alt="logo Instagram" class="li1__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li2 li2">
+                            <img src="/public/icones/facebook_1.webp" alt="logo Facebook" class="li2__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="https://www.youtube.com/channel/UCeTZe0cGb4BJasd4RHtFR9w" class="link__li--li3 li3">
+                            <img src="/public/icones/youtube_(1)_1.webp" alt="logo Youtube" class="li3__img">
+                        </a>
+                    </li>
+                    <li class="link__li">
+                        <a href="#" class="link__li--li4 li4">
+                            <img src="/public/icones/mail_1.webp" alt="logo mail" class="li4__img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/a_propos.html">
+                    <h5 class="nav__title">A propos</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/glossaire.html">
+                    <h5 class="nav__title">Glossaire</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/autres_projets.html">
+                    <h5 class="nav__title">Autres Projets</h5>
+                </a>
+            </nav>
+
+            <nav class="footer_nav nav">
+                <a href="/fr/contact.html">
+                    <h5 class="nav__title">Contact</h5>
+                </a>
+            </nav>
+        
+            <div class="footer_div">
+                <h5 class="footer__title">Mention Légale</h5>
+                <p class="footer__legend">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__text--link">MMi de Montbéliard</a>.</p>
+                <img src="/public/icones/MMI_1.webp" alt="logo du MMI" class="footer__logo">
+            </div>
+
+            <div class="footer_div">
+                <p class="footer__text">Xavier REBUFFONI MMI 1 C1</p>
+            </div>
+        
+        </footer>
+    </body>
+
+</html>

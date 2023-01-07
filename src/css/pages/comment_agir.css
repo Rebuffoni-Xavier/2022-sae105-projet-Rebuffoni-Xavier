@@ -20,10 +20,14 @@ h3 {
     color: black;
 }
 
+.article__text--2 {
+    color: black;
+}
+
 .utils {
     background-color: #D0DB8C;
     border-radius: 5px;
-    width: 40%;
+    width: 70%;
     margin: auto;
     margin-top: 30px;
     display: flex;
@@ -40,4 +44,9 @@ h3 {
 
 .definition {
     color: var(--comment-agir-);
+}
+
+.citation__text {
+    padding: 0px;
+    color: black;
 }

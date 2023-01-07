@@ -2,6 +2,11 @@
     margin: 0px;
     padding: 0px;
     background: #3C523A;
+    background-image: url(/public/icones/arbre_mort.svg);
+    background-size: 340px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
 }
 
 h1,
@@ -69,8 +74,34 @@ h3 {
     height: auto;
 }
 
-.miniature {
-    width: 100px;
-    height: auto;
+.miniatures__1 {
+    height: 60px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
     cursor: pointer;
+}
+
+.miniatures__2 {
+    height: 60px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15rem;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.miniatures__1--img,
+.miniatures__2--img {
+    border: solid;
+    border-color: white;
+    border-radius: 5px;
+}
+
+.point {
+    margin: 0px;
+    margin-top: 240px;
 }

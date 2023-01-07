@@ -93,26 +93,30 @@ x-data="{"
             <section>
                 <h2>LIEUX SIMILAIRES</h2>
 
-                <div>
-                    <img src="/public/img/RMM_1388012_Meradhoo_Island 1.webp" alt="miniature Îles Maldives"
-                        @click="imageIsOpen1 = '/public/img/RMM_1388012_Meradhoo_Island%201.webp'"
-                        class="miniature"
-                    >
+                <div class="miniatures">
+                    <div class="miniatures__1">
+                        <img src="/public/img/Plastique.webp" alt="miniature Continent de plastique"
+                            @click="imageIsOpen2 = '/public/img/Plastique.webp'"
+                            class="miniatures__2--img"
+                        >
 
-                    <img src="/public/img/Plastique.webp" alt="miniature Continent de plastique"
-                        @click="imageIsOpen2 = '/public/img/Plastique.webp'"
-                        class="miniature"
-                    >
+                        <img src="/public/img/Inondation-Pakistan-FR_v2.webp" alt="miniature Carte résumé des inondations au Pakistan"
+                            @click="imageIsOpen4 = '/public/img/Inondation-Pakistan-FR_v2.webp'"
+                            class="miniatures__2--img"
+                        >
+                    </div>
 
-                    <img src="/public/img/Inondation-Pakistan-FR_v2.webp" alt="miniature Carte résumé des inondations au Pakistan"
-                        @click="imageIsOpen4 = '/public/img/Inondation-Pakistan-FR_v2.webp'"
-                        class="miniature"
-                    >
+                    <div class="miniatures__2">
+                        <img src="/public/img/RMM_1388012_Meradhoo_Island 1.webp" alt="miniature Îles Maldives"
+                            @click="imageIsOpen1 = '/public/img/RMM_1388012_Meradhoo_Island%201.webp'"
+                            class="miniatures__1--img"
+                        >
 
-                    <img src="/public/img/Fonte_banquise.webp" alt="miniature Carte résumé de la fonte des banquises"
-                        @click="imageIsOpen3 = '/public/img/Fonte_banquise.webp'"
-                        class="miniature"
-                    >
+                        <img src="/public/img/Fonte_banquise.webp" alt="miniature Carte résumé de la fonte des banquises"
+                            @click="imageIsOpen3 = '/public/img/Fonte_banquise.webp'"
+                            class="miniatures__1--img"
+                        >
+                    </div>
                 </div>
                 
                 <div class="frise__overlay overlay"
@@ -159,7 +163,7 @@ x-data="{"
                     </figure>
                 </div>
 
-                <img src="/public/icones/arbre_mort.svg" alt="Arbre Mort" class="img__principale">
+                <p class="point">.</p>
             </section>
         </main>
 

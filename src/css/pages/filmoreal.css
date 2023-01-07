@@ -40,6 +40,10 @@ h3 {
     width: 227px;
 }
 
+.article__text::first-letter {
+    font-size: var(--texte-articles);
+}
+
 .article__button {
     width: 170px;
     margin-bottom: 1rem;
